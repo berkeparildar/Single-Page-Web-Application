@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 .header {
@@ -41,6 +42,7 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+    text-align: center;
 }
 
 .n-l ul li::after {
@@ -50,18 +52,54 @@ nav {
     background: #ffffff;
     display: block;
     margin: auto;
-    transition: 0.3s;
 }
 
 .n-l ul li:hover::after {
     width: 100%;
 }
 
-.b div {
-    position: relative;
+#env {
+    vertical-align: bottom;
+    size: 75%;
+    text-align: center;
+}
+
+.dock {
+    padding: 0px 16px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color: red;
-    display: inline;
+    display: flex;
+    justify-content: center;
+
+}
+
+.child {
+    background-color: #f1f1f1;
+    height: 5vw;
+    width: 90%;
+    border-radius: 4px;
+}
+
+div ul li {
+    list-style: none;
+}
+
+div ul li a {
+    color: #3a28da;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content {
+    padding: 16px;
+}
+
+.stuck {
+    position: fixed;
+    top: 5%;
+}
+
+.stuck+.content {
+    padding-top: 102px;
 }
