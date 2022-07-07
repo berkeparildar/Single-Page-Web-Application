@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-image: url(\materials\bg.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(\materials\bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+/* .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+} */
+
+nav img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.n-l {
+    flex: 1;
+    text-align: right;
+}
+
+.n-l ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+}
+
+.n-l ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+.n-l ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+}
+
+.n-l ul li:hover::after {
+    transition: 0.3s;
+    width: 100%;
+}
+
+#env {
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px !important;
+}
+
+.dock {
+    padding: 0px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.child {
+    background-color: #f1f1f1;
+    height: 3rem;
+    width: 80rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+div ul li {
+    list-style: none;
+}
+
+div ul li a {
+    color: #3a28da;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content {
+    padding: 16px;
+}
+
+.stuck {
+    position: fixed;
+    top: 5%;
+}
+
+.stuck+.content {
+    padding-top: 102px;
+}
+
+.dropB {
+    background-color: rgba(255, 255, 255, 0);
+    color: darkblue;
+    font-size: 0.8rem;
+    border: none;
+    height: 3rem;
+    text-align: center;
+    position: static;
+    margin-right: 0.5rem;
+}
+
+.dropB:hover,
+.dropB:focus {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropCont {
+    display: none;
+    position: absolute;
+    margin: 0.5em;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 4px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropCont a {
+    color: darkblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropCont a:hover {
+    background-color: rgba(199, 179, 245, 0.425);
+    border-radius: 4px;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown:hover .drop {
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 200px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-div {
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.footer-div p {
+    margin-top: 2em;
+}
+
+.footer-div h3 {
+    margin-top: 1em;
+}
+
+@media only screen and (max-width:800px) {
+    .child {
+        height: 6em;
+        width: 50em;
+    }
+}
