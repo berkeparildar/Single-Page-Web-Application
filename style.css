@@ -75,30 +75,37 @@ nav {
     padding: 0px 16px;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
 .child {
     background-color: #f1f1f1;
-    height: 3rem;
-    width: 80rem;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
     box-shadow: 0px 1px 2px 1px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
 }
 
 div ul li {
     list-style: none;
 }
 
-div ul li a {
-    color: #3a28da;
-    text-decoration: none;
-    font-size: 1rem;
+.dropB {
+    background-color: rgba(255, 255, 255, 0);
+    color: darkblue;
+    font-size: 0.8rem;
+    border: none;
+    height: 3rem;
     text-align: center;
-    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
+
 
 .content {
     padding: 16px;
@@ -118,26 +125,9 @@ div ul li a {
     padding-top: 102px;
 }
 
-.dropB {
-    background-color: rgba(255, 255, 255, 0);
-    color: darkblue;
-    font-size: 0.8rem;
-    border: none;
-    height: 3rem;
-    text-align: center;
-    position: static;
-    margin-right: 0.5rem;
-}
-
 .dropB:hover,
 .dropB:focus {
     cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .dropCont {
@@ -157,6 +147,7 @@ div ul li a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: center;
 }
 
 .dropCont a:hover {
@@ -172,12 +163,57 @@ div ul li a {
     cursor: pointer;
 }
 
+.middle-row {
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.middle-u {
+    display: inline-block;
+    width: 30%;
+    position: static;
+    text-align: left;
+    border-radius: 18px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.175);
+}
+
+.middle-u img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.middle-u-c p {
+    padding-right: 0.5em;
+}
+
+.middle-u-c {
+    margin-left: 1em;
+    font-size: 0.8em;
+    margin-right: 1em;
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-u-c a {
+    color: orange;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
 .footer {
     background-image: url(materials/footer-bg.jpg);
     position: static;
     bottom: 0;
     width: 100%;
     display: flex;
+    justify-content: space-around;
     margin-top: 5%;
     color: white;
 }
@@ -192,41 +228,21 @@ div ul li a {
 
 .footer-div p {
     margin-top: 2em;
+    font-size: 13px;
 }
 
-.footer-div h3 {
+.footer-div h4 {
     margin-top: 1em;
-}
-
-.middle-row {
-    left: 5%;
-    right: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-}
-
-.middle-u {
-    display: inline-block;
-    width: 30%;
-    position: static;
     text-align: center;
 }
 
-.middle-u img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .endNote p {
+    padding: 0.5em;
     background-color: white;
     font-weight: 200;
     text-align: center;
     color: #3a28da;
-    padding: 1em;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .seperator {
@@ -247,9 +263,25 @@ div ul li a {
     margin: 5em;
 }
 
-@media only screen and (max-width:800px) {
-    .child {
-        height: 6em;
-        width: 50em;
+@media (max-width: 768px){
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .stuck{
+        position: relative;
+    }
+    .n-l{
+        display: none;
+    }
+    .dropdown{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .middle-u-c, .middle-u-c a{
+        font-size: 8px;
+    }
+    .footer-div, .footer-div p{
+        font-size: 8px;
     }
 }
