@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .header {
@@ -106,7 +107,6 @@ div ul li {
     margin-left: 0.5rem;
 }
 
-
 .content {
     padding: 16px;
 }
@@ -114,6 +114,10 @@ div ul li {
 .stuck {
     top: 0%;
     position: fixed;
+}
+
+.vert {
+    display: inline-block;
 }
 
 .stuck::after {
@@ -207,6 +211,100 @@ div ul li {
     font-size: 0.8rem;
 }
 
+.panel {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+.panel ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel li {
+    display: inline-block;
+    width: 16%;
+    height: 100px;
+}
+
+.ph-block {
+    text-align: center;
+    border-top: #3a28da 1px solid;
+}
+
+.button-con {
+    display: flex;
+    justify-content: center;
+}
+
+.bc-con {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.bc-con div {
+    width: 300px;
+    height: 30px;
+    margin: 0.5em;
+    color: #3a28da;
+    border: 1px rgba(0, 0, 0, 0.125) solid;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.presentation {
+    padding: 5em;
+}
+
+.imgHold {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgdivs {
+    display: inline-block;
+    width: 248px;
+    height: 208px;
+    border-radius: 5px;
+}
+
+.imgdivs p {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    color: #3a28da;
+    background-color: #f1f1f17e;
+}
+
+.imgdivs p:hover {
+    color: #f1f1f1;
+    background-color: #3a28da;
+    transition: 0.7s;
+}
+
+#imgdiv1 {
+    background-image: url(materials/fade/1.png);
+}
+
+#imgdiv2 {
+    background-image: url(materials/fade/2.jpg);
+}
+
+#imgdiv3 {
+    background-image: url(materials/fade/3.png);
+}
+
+#imgdiv4 {
+    background-image: url(materials/fade/4.png);
+}
+
 .footer {
     background-image: url(materials/footer-bg.jpg);
     position: static;
@@ -246,42 +344,44 @@ div ul li {
 }
 
 .seperator {
-    height: 2%;
-    width: 10%;
-    padding-left: 45%;
-    background-color: orange;
-}
-
-.presentation {
+    padding: 3em;
     display: flex;
     justify-content: center;
 }
 
-.imgHold img {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 5em;
+.seperator div {
+    height: 2px;
+    width: 100px;
+    background-color: orange;
 }
 
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     nav {
         display: flex;
         justify-content: center;
     }
-    .stuck{
+
+    .stuck {
         position: relative;
     }
-    .n-l{
+
+    .n-l {
         display: none;
     }
-    .dropdown{
+
+    .dropdown {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .middle-u-c, .middle-u-c a{
+
+    .middle-u-c,
+    .middle-u-c a {
         font-size: 8px;
     }
-    .footer-div, .footer-div p{
+
+    .footer-div,
+    .footer-div p {
         font-size: 8px;
     }
 }
