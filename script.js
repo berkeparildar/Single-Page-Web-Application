@@ -1,13 +1,8 @@
 window.onscroll = function () { myFunc() };
-var dock = document.getElementById('myDock');
-var stuck = dock.offsetTop;
+var dock = document.getElementByClassName('carousel-panel-text');
+var sd = width.getElementByClassName('carousel-inner');
 function myFunc() {
-    if (window.pageYOffset > stuck) {
-        dock.classList.add("stuck");
-    }
-    else {
-        dock.classList.remove("stuck");
-    }
+    dock.width = sd;
 }
 function drop() {
     document.getElementById("jDrop").classList.toggle("show");

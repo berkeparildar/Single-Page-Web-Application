@@ -5,8 +5,8 @@
     text-decoration: none;
 }
 
-.wid {
-    width: 100%;
+body {
+    background-color: #f1faee;
 }
 
 .header {
@@ -14,21 +14,10 @@
     width: 100%;
     background-position: center;
     background-image: url(materials/bg.png);
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(materials/bg.png);
+    background-image: linear-gradient(#1d3557ad, #1d3557ad), url(materials/bg.png);
     background-size: cover;
     position: relative;
 }
-
-.yolo {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1400px;
-} */
 
 nav img {
     width: 120px;
@@ -47,14 +36,14 @@ nav {
 }
 
 .hbf div div a {
-    color: #f1f1f1;
+    color: #f1faee;
 }
 
 .hbf div div a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #ffffff;
+    background: #f1faee;
     display: block;
     margin: auto;
 }
@@ -64,65 +53,64 @@ nav {
     width: 100%;
 }
 
-#env {
-    vertical-align: bottom;
-    text-align: center;
-    font-size: 18px !important;
-}
-
-
 .hbs {
     width: 90%;
     margin-left: 5%;
     border-radius: 4px;
 }
 
-.smol {
+.hbs-font {
     font-size: 0.8rem;
+    color: #1d3557;
 }
 
-.carousel-item img {
-    width: 50%;
-    margin: auto auto;
-}
-
-.carousel-inner {
-    display: flex;
-    justify-content: space-around;
-}
-
-.dropCont {
-    display: none;
-    position: absolute;
-    margin: 0.5em;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 4px 8px 4px;
-    z-index: 1;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.dropCont a {
-    color: darkblue;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+div h4 {
     text-align: center;
 }
 
-.dropCont a:hover {
-    background-color: rgba(199, 179, 245, 0.425);
-    border-radius: 4px;
+
+#env {
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px !important;
 }
 
-.show {
-    display: block;
+#carouselExampleFade {
+    padding: 10px;
 }
 
-.dropdown:hover .drop {
-    cursor: pointer;
+#cimg {
+    top: 0;
 }
+
+#carousel-panel {
+    background-color: #457b9d86;
+}
+
+.carousel-control-next {
+    position: relative;
+    float: right;
+}
+
+.carousel-control-prev {
+    position: relative;
+    float: right;
+}
+
+#carousel-panel-text {
+    color: #f1faee;
+    font-size: 0.8rem;
+    background-color: #1d3557;
+}
+
+.dropdown-menu a {
+    font-size: 0.6rem;
+}
+
+.dropdown-menu li {
+    font-size: 0.6rem;
+}
+
 
 .middle-row {
     left: 5%;
@@ -163,7 +151,7 @@ nav {
 }
 
 .middle-u-c a {
-    color: orange;
+    color: #e63946;
     text-decoration: none;
     font-size: 0.8rem;
 }
@@ -207,7 +195,7 @@ nav {
     width: 300px;
     height: 30px;
     margin: 0.5em;
-    color: #3a28da;
+    color: #a8dadc;
     border: 1px rgba(0, 0, 0, 0.125) solid;
     text-align: center;
     box-shadow: 1px 1px 1px 1px;
@@ -306,10 +294,28 @@ nav {
     justify-content: center;
 }
 
+.seperator {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.seperator-t {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
 .seperator div {
     height: 2px;
     width: 100px;
-    background-color: orange;
+    background-color: #e63946;
+}
+
+.seperator-t div {
+    height: 2px;
+    width: 100px;
+    background-color: #e63946;
 }
 
 
