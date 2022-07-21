@@ -7,6 +7,7 @@
 
 body {
     background-color: #f1faee;
+
 }
 
 .header {
@@ -69,6 +70,16 @@ div h4 {
 }
 
 
+.dropdown-menu ul li a {
+    color: #1d3557;
+    font-size: 0.7rem;
+}
+
+.dropdown-menu ul li ul li a {
+    color: #1d3557;
+    font-size: 0.6rem;
+}
+
 #env {
     vertical-align: bottom;
     text-align: center;
@@ -87,14 +98,10 @@ div h4 {
     background-color: #457b9d86;
 }
 
-.carousel-control-next {
-    position: relative;
-    float: right;
-}
-
-.carousel-control-prev {
-    position: relative;
-    float: right;
+.assl {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #carousel-panel-text {
@@ -103,14 +110,9 @@ div h4 {
     background-color: #1d3557;
 }
 
-.dropdown-menu a {
-    font-size: 0.6rem;
+.carousel-control-prev {
+    left: auto;
 }
-
-.dropdown-menu li {
-    font-size: 0.6rem;
-}
-
 
 .middle-row {
     left: 5%;
