@@ -1,0 +1,65 @@
+nav img {
+    width: 120px;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-image: url(raw\materials\bg.png);
+    background-image: linear-gradient(#1d3557ad, #1d3557ad), url(raw\materials\bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+
+.hbf {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hbf div div a {
+    color: #f1faee;
+}
+
+.hbf div div a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f1faee;
+    display: block;
+    margin: auto;
+}
+
+.hbf div div a:hover::after {
+    transition: 0.3s;
+    width: 100%;
+}
+
+.hbs {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 4px;
+}
+
+.hbs-font {
+    font-size: 0.8rem;
+    color: #1d3557;
+}
+
+
+.dropdown-menu ul li a {
+    color: #1d3557;
+    font-size: 0.7rem;
+}
+
+.dropdown-menu ul li ul li a {
+    color: #1d3557;
+    font-size: 0.6rem;
+}
+
+#env {
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px !important;
+}

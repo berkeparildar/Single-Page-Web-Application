@@ -1,0 +1,37 @@
+#cimg {
+    top: 0;
+}
+
+#carousel-panel-text {
+    color: #f1faee;
+    font-size: 0.8rem;
+    background-color: #1d3557;
+    padding: 1rem;
+    padding-right: 3rem;
+}
+
+.carousel-control-prev {
+    left: auto;
+}
+
+.seperator-t {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.seperator div {
+    height: 2px;
+    width: 100px;
+    background-color: #e63946;
+}
+
+.seperator-t div {
+    height: 2px;
+    width: 100px;
+    background-color: #e63946;
+}
+
+div h4 {
+    text-align: center;
+}

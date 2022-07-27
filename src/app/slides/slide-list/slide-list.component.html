@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class=" position-relative col-10 col-sm-7 pr-0 ">
+        <img id="cimg" src="{{slideArray[num].imagePath}}" class="d-block w-100" alt="...">
+    </div>
+    <div id="carousel-panel-text" class=" col-12 col-sm-5 position-relative">
+        <h4> {{slideArray[num].title}} </h4>
+        <div class="seperator-t">
+            <div></div>
+        </div>
+        <p> {{slideArray[num].description}} </p>
+        <div class="d-flex justify-content-between fixed-bottom position-absolute m-3">
+            <button class="shadow btn btn-info">Devamı</button>
+            <div class="d=flex justify-content-center w-25">
+                <button class="carousel-control-next type=" button data-target="#carouselExampleFade" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
