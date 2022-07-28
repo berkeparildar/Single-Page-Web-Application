@@ -1,0 +1,27 @@
+.fh {
+    color: white;
+}
+
+.seperator {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.seperator-t {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.seperator div {
+    height: 4px;
+    width: 100px;
+    background-color: #e63946;
+}
+
+.seperator-t div {
+    height: 2px;
+    width: 100px;
+    background-color: #e63946;
+}

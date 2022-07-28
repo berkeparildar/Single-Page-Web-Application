@@ -1,0 +1,42 @@
+.footer {
+    background-image: url(raw\materials\footer-bg.jpg);
+    position: static;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    color: white;
+}
+
+.footer-div {
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.col p {
+    margin-top: 2em;
+    font-size: 0.7rem;
+}
+
+.col h4 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.endNote p {
+    padding: 0.5em;
+    background-color: white;
+    font-weight: 200;
+    text-align: center;
+    color: #3a28da;
+    font-size: 15px;
+    margin: 0;
+}
+
+.endNote {
+    bottom: 0;
+}

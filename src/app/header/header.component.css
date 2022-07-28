@@ -3,12 +3,8 @@ nav img {
 }
 
 .header {
-    min-height: 100vh;
     width: 100%;
     background-position: center;
-    background-image: url(raw\materials\bg.png);
-    background-image: linear-gradient(#1d3557ad, #1d3557ad), url(raw\materials\bg.png);
-    background-size: cover;
     position: relative;
 }
 

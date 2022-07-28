@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedOption = 'menu';
+  onNavigate(opt: string) {
+    this.loadedOption = opt;
+  }
 }

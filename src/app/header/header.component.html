@@ -1,6 +1,6 @@
 <section class="header">
     <nav class="navbar navbar-expand-lg hbf">
-        <a class="navbar-brand" href="#"><img
+        <a class="navbar-brand" (click)="onSelect('main')" href="#"><img
                 src="https://api.izto.org.tr/storage/HeaderFixed/original/A9YNZTxsGJmINlY9.svg" alt="se"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,11 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a href class="dropdown-item">Vizyonumuz ve Misyonumuz</a>
+                                <a href="#" class="dropdown-item" (click)="onSelect('menu')">Vizyonumuz ve
+                                    Misyonumuz</a>
                             </li>
                             <li class="my-1">
-                                <a href="" class="dropdown-item">Temel Değerlerimiz ve Yönetim Politikamız</a>
+                                <a href="#" class="dropdown-item">Temel Değerlerimiz ve Yönetim Politikamız</a>
                             </li>
                             <li>
                                 <ul class="list-unstyled"><a href="" class="dropdown-item">Organizasyon
@@ -394,5 +395,4 @@
             </ul>
         </div>
     </nav>
-    <app-slides></app-slides>
 </section>
