@@ -7,8 +7,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() optionSelected = new EventEmitter<string>();
+  @Output() navOptionSelected = new EventEmitter<string>();
   onSelect(opt: string) {
     this.optionSelected.emit(opt);
+  }
+  onSelectNav(navOpt: string){
+    this.navOptionSelected.emit(navOpt);
   }
   constructor() { }
   ngOnInit(): void {
