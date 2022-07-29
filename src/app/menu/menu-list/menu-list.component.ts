@@ -6,6 +6,12 @@ import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@a
   styleUrls: ['./menu-list.component.css']
 })
 export class MenuListComponent implements OnInit {
+  @Output() shareDropArray = new EventEmitter<Array<Array<string>>>;
+
+  onDropArrayShare(arr: Array<Array<string>>) {
+    this.shareDropArray.emit(arr);
+  }
+
   KContents = ['Vizyonumuz ve Misyonumuz', 'Temel Değerlerimiz ve Yönetim Politikamız', 'Organizasyon Yapısı', 'Logo ve Kurumsal Kimlik', 'Oda Hesapları', 'Stratejik Planlar ve Çalışma Programları', 'Kardeş Odalar', 'KVKK', 'Etkinlik Takvimi', 'Hizmet Rehberi'];
 
   EContents = ['Meslek Komitesi Çalışmaları', 'Temel Değerlerimiz ve Yönetim Politikamız', 'E-Formlar', 'Bilgi Edinme Birimi', 'Vizyon Dergisi']

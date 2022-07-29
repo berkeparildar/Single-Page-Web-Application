@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +6,21 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  receivedName: string;
   loadedOption = 'menu';
   loadedNavOption = 'Kurumsal';
   index: number = 99;
+
+  getFromHeader(item: string) {
+    this.receivedName = item;
+    console.log(this.receivedName);
+  }
+
+
   onNavigate(opt: string) {
     this.loadedOption = opt;
   }
+
   onNavNavigate(opte: string) {
     this.loadedNavOption = opte;
     if (this.loadedNavOption === 'Kurumsal') {
@@ -47,6 +56,7 @@ export class AppComponent {
       console.log(this.index);
     }
   }
+
   ngOnInit(): void {
   }
 }

@@ -1,4 +1,6 @@
 <ul class="py-3  list-unstyled rounded-lg shadow-lg">
-    <li *ngFor="let bname of ray[int]"><a href="##" (click)="sendFunc(bname)">{{ray[int][ray[int].indexOf(bname)]}}</a>
-    </li>
+    <a href="##" *ngFor="let bname of ray[int]" (click)="sendFunc(bname)">
+        <li> {{ray[int][ray[int].indexOf(bname)]}} </li>
+    </a>
+
 </ul>
