@@ -1,4 +1,4 @@
-<app-header (optionSelected)="onNavigate($event)"  (navOptionSelected)="onNavNavigate($event)"></app-header>
+<app-header (optionSelected)="onNavigate($event)" (navOptionSelected)="onNavNavigate($event)"></app-header>
 <app-main *ngIf="loadedOption === 'main'"></app-main>
-<app-menu [num]=index *ngIf="loadedOption !== 'main'"></app-menu>
+<app-menu [num]=index *ngIf="loadedOption!=='main'"></app-menu>
 <app-footer></app-footer>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChange } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@angular/core';
 
 @Component({
   selector: 'app-menu-list',
@@ -6,22 +6,35 @@ import { Component, Input, OnInit, SimpleChange } from '@angular/core';
   styleUrls: ['./menu-list.component.css']
 })
 export class MenuListComponent implements OnInit {
-  name;
- 
-  listContents = ['Vizyonumuz ve Misyonumuz', 'Temel Değerlerimiz ve Yönetim Politikamız', 'Organizasyon Yapısı', 'Logo ve Kurumsal Kimlik', 'Oda Hesapları', 'Stratejik Planlar ve Çalışma Programları', 'Kardeş Odalar', 'KVKK', 'Etkinlik Takvimi', 'Hizmet Rehberi'];
+  KContents = ['Vizyonumuz ve Misyonumuz', 'Temel Değerlerimiz ve Yönetim Politikamız', 'Organizasyon Yapısı', 'Logo ve Kurumsal Kimlik', 'Oda Hesapları', 'Stratejik Planlar ve Çalışma Programları', 'Kardeş Odalar', 'KVKK', 'Etkinlik Takvimi', 'Hizmet Rehberi'];
+
+  EContents = ['Meslek Komitesi Çalışmaları', 'Temel Değerlerimiz ve Yönetim Politikamız', 'E-Formlar', 'Bilgi Edinme Birimi', 'Vizyon Dergisi']
+
+  UContents = ['Üyelik İşlemleri', 'Üyeler', 'İZTO Hizmet Standartları', 'Faaliyet Kodları ve Meslek Grupları Tanımları'];
+
+  DContents = ['Duyurular', 'Eğitimler'];
+
+  IContents = ['  İzmir Ticaret Odası İhalelerimiz', 'İZTO Eğitim ve Sağlık Vakfı İhaleleri', 'İZQ İhaleleri', 'İzmir Ekonomi Üniversitesi İhaleleri', 'İZFAŞ İhaleleri'];
+
+  TContents = ['İhracat Destek Ofisi', 'Girişimcilik', 'Vize Hizmetleri', 'Fuarlar', 'İhaleler'];
+
+  BContents = ['Ticaret Sicili Rehberi', 'Oda Sicili Rehberi', 'Ticari İşletme Tanımları', 'Ticari İşlemler Rehberi', 'Kruvaziyer Turizmi', 'Hukuk Sahfası', 'Fire ve Zaiyat Oranları', 'Gayrimenkul Danışmanlığı', 'Yenişehir Ticaret Merkezi', 'Ulusal ve Uluslararası Bağlantılar', 'İzmir Ticaret Odası İhracatçı Firmalar Listesi', 'İzmir', 'Sıkça Sorulan Sorular'];
+
+  ZContents = ['Arabuluculuk Sürecinin Temel Nitelikleri'];
+
+  ray = [this.KContents, this.EContents, this.UContents, this.DContents, this.IContents, this.TContents, this.BContents, this.ZContents];
+
+
   @Input('ind') num: number = 0;
-  length: number = this.listContents.length;
+
+  @Output() toParent = new EventEmitter<string>();
+  sendFunc(value: string) {
+    this.toParent.emit(value);
+  }
+  @Input('ArrayIndex') int: number = 0;
 
   constructor() {
+    console.log(this.int);
   }
-
-  ngOnInit(): void {
-    for (let i = 0; i < this.length; i++) {
-      this.fun();
-      console.log(this.num);
-    }
-  }
-  fun() {
-    this.num++;
-  }
+  ngOnInit(): void { }
 }

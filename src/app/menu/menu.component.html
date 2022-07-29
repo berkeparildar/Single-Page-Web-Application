@@ -1,22 +1,22 @@
 <div class="container py-3 fh">
     <div class="row d-flex justify-content-center align-items-center">
-        <h2 >{{headerArray[num]}}</h2>
+        <h2>{{headerArray[num]}}</h2>
     </div>
     <div class="seperator">
         <div></div>
     </div>
     <div class="row justify-content-center">
-        <P>INFO</P>
+        <P> {{headerArray[num]}} / {{lName}} </P>
     </div>
 </div>
 <div class="w-100 bg-light">
     <div class="container">
         <div class="row p-2">
             <div class="col-3">
-                <app-menu-list></app-menu-list>
+                <app-menu-list [ArrayIndex]=num (toParent)="getFromChild($event)"></app-menu-list>
             </div>
             <div class="col-9">
-                <app-menu-panel></app-menu-panel>
+                <app-menu-panel [tit]=lName></app-menu-panel>
             </div>
         </div>
     </div>
