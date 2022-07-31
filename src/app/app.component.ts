@@ -7,8 +7,9 @@ import { Component, Input, OnChanges } from '@angular/core';
 })
 export class AppComponent {
   receivedName: string;
-  loadedOption = 'menu';
+  loadedOption = 'main';
   loadedNavOption = 'Kurumsal';
+  loadedNavDropOption = 'a';
   index: number = 99;
 
   getFromHeader(item: string) {
@@ -16,9 +17,12 @@ export class AppComponent {
     console.log(this.receivedName);
   }
 
-
   onNavigate(opt: string) {
     this.loadedOption = opt;
+  }
+
+  onDropShown(ot: string){
+    this.loadedNavDropOption = ot;
   }
 
   onNavNavigate(opte: string) {

@@ -2,5 +2,5 @@
     (navDropSelected)="getFromHeader($event)">
 </app-header>
 <app-main *ngIf="loadedOption === 'main'"></app-main>
-<app-menu [num]=index *ngIf="loadedOption!=='main'" [lName]="receivedName"></app-menu>
+<app-menu [num]=index *ngIf="loadedOption!=='main'" [lName]="receivedName" ></app-menu>
 <app-footer></app-footer>

@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuPanelComponent implements OnInit {
   @Input('tit') title: string = 'a';
+  @Input('sumIndex') num : number;
   constructor() { }
 
   ngOnInit(): void {

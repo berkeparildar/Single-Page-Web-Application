@@ -10,6 +10,7 @@ export class MenuComponent implements OnInit {
   @Input() lName: string;
   headerArray = ['Kurumsal', 'E-Oda', 'Üyelik ve Üyeler', 'Duyuru ve Etkinlikler', 'İhalelerimiz', 'Ticaret Noktası', 'Bilgi Bankası', 'İZTOTAM', 'İletişim'];
   @Input() num: number;
+  @Input() selectedNavOptionForPanel: string;
   ngOnInit(): void { }
   constructor() { }
 
