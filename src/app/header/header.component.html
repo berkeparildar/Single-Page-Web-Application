@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav row w-100 justify-content-around ">
                 <li class="nav-item">
-                    <a class="nav-link hbs-font" href="#">Anasayfa</a>
+                    <a (click)="onSelect('main')" id="navbarDropdownMenuLink" class="nav-link hbs-font" href="#">Anasayfa</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hbs-font" href="#" id="navbarDropdownMenuLink2" role="button"
+                    <a class="nav-link dropdown-toggle hbs-font" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-expanded="false">
                         Kurumsal
                     </a>
@@ -531,7 +531,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a (click)="onSelectDrop('xİletişim')" (click)="onSelect('menu')" (click)="onSelectNav('İletişim')"
+                    <a id="navbarDropdownMenuLink" (click)="onSelectDrop('xİletişim')" (click)="onSelect('menu')" (click)="onSelectNav('İletişim')"
                         class="nav-link hbs-font" href="#">İletişim</a>
                 </li>
             </ul>

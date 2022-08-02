@@ -10,11 +10,11 @@ ul {
     justify-content: center;
 }
 ul a {
-    text-align: center;
     border: 2px solid #1d3557;
     transition: 0.3s;
     font-size: 1rem;
     text-decoration: none;
+    padding-left: 0.5rem;
 }
 
 ul a:hover{
@@ -31,11 +31,14 @@ ul ul li {
     flex-direction: column;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    text-align: center;
     width: 100%;
 }
 ul ul li {
     font-size: 0.8rem;
+}
+
+ul ul li a{
+    padding: 1rem;
 }
 
 /* 

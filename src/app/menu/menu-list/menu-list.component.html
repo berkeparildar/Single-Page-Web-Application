@@ -1,5 +1,5 @@
 <ul class="py-3  list-unstyled rounded-lg shadow-lg">
-    <ul href="##" *ngFor="let bname of ray[int]" class="py-1">
+    <ul href="##" *ngFor="let bname of ray[int]" class="py-1 shadow-lg">
         <a (click)="sendFunc(bname)" class="py-2"> {{ray[int][ray[int].indexOf(bname)].substring(1, bname.length)}} </a>
         <ng-container *ngIf="bname.substring(0,1) === 't'">
             <ng-container *ngFor="let suam of dRay[int]" href="">

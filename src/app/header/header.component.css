@@ -6,9 +6,15 @@ nav img {
     width: 100%;
     background-position: center;
     position: relative;
-
 }
 
+#navbarDropdownMenuLink{
+color: #1d3557;
+}
+
+#navbarDropdownMenuLink:hover{
+    color: #457b9d;
+}
 
 .hbf {
     width: 80%;
@@ -40,19 +46,23 @@ nav img {
 }
 
 .hbs-font {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #1d3557;
 }
 
 
 .dropdown-menu ul li a {
     color: #1d3557;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .dropdown-menu ul li ul li a {
     color: #1d3557;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.nav-link{
+    color: #1d3557;
 }
 
 #env {
