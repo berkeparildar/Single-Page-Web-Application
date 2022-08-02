@@ -13,10 +13,10 @@ export class MenuListComponent implements OnInit {
   EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Üye Memnuniyeti Anketi', 'tMeslek Komiteleri İletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'tGüncelleme', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
 
   UContents = ['tÜyelik İşlemleri', 'yÜyeler', 'nİZTO Hizmet Standartları', 'nFaaliyet Kodları ve Meslek Grupları Tanımları'];
-  UDrop =['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizöet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar', 'yÜye Firma Sorgulama', 'yYeni Üye Kayıt O nline Takip']
- 
+  UDrop = ['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizöet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar', 'yÜye Firma Sorgulama', 'yYeni Üye Kayıt O nline Takip']
+
   DContents = ['tDuyurular', 'nEğitimler'];
-  DDrop= ['tGenel Duyurular', 'tOda Duyurular', 'tFuar Duyuruları', 'tDış Ticaret Duyuruları', 'tTicaret Sicil Duyuruları'];
+  DDrop = ['tGenel Duyurular', 'tOda Duyurular', 'tFuar Duyuruları', 'tDış Ticaret Duyuruları', 'tTicaret Sicil Duyuruları'];
 
   IContents = ['nİzmir Ticaret Odası İhalelerimiz', 'nİZTO Eğitim ve Sağlık Vakfı İhaleleri', 'nİZQ İhaleleri', 'nİzmir Ekonomi Üniversitesi İhaleleri', 'nİZFAŞ İhaleleri'];
 
@@ -32,15 +32,15 @@ export class MenuListComponent implements OnInit {
   @Input('ind') num: number = 0;
   @Input('ArrayIndex') int: number = 0;
   @Output() toParent = new EventEmitter<string>();
-  
+
   sendFunc(value: string) {
     this.toParent.emit(value);
   }
 
 
 
-  indexFind(){
-    
+  indexFind() {
+
   }
 
   constructor() {

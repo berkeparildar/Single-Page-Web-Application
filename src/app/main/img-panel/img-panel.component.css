@@ -1,0 +1,31 @@
+img {
+    border-radius: 5px;
+}
+
+.row .col p {
+    color: #3a28da;
+}
+
+
+a p {
+    background-color: #f1f1f17e;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.2rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+.row .col p:hover {
+    color: #f1f1f1;
+    background-color: #3a28da;
+    transition: 0.7s;
+}
+
+#bg {
+    background-color: floralwhite;
+    padding-bottom: 3rem;
+}

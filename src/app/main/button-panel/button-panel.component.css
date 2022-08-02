@@ -1,0 +1,36 @@
+.middle-u img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#bg {
+    background-color: floralwhite;
+}
+
+.middle-u-c p {
+    padding-right: 0.5em;
+}
+
+#rb {
+    border-radius: 18px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.175);
+}
+
+
+.middle-u-c {
+    margin-left: 1em;
+    font-size: 0.8em;
+    margin-right: 1em;
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-u-c a {
+    color: #e63946;
+    text-decoration: none;
+    font-size: 0.8rem;
+}

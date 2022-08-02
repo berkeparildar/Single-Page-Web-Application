@@ -1,11 +1,10 @@
 .footer {
-    background-image: url(raw\materials\footer-bg.jpg);
+    background-image: url(src\assets\materials\footer-bg.jpg);
     position: static;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-
     color: white;
 }
 

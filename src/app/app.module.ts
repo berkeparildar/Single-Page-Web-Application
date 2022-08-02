@@ -12,6 +12,9 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuListComponent } from './menu/menu-list/menu-list.component';
 import { MenuPanelComponent } from './menu/menu-panel/menu-panel.component';
 import { PanelContentComponent } from './menu/menu-panel/panel-content/panel-content.component';
+import { ButtonPanelComponent } from './main/button-panel/button-panel.component';
+import { ImgPanelComponent } from './main/img-panel/img-panel.component';
+import { SecondButtonPanelComponent } from './main/second-button-panel/second-button-panel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { PanelContentComponent } from './menu/menu-panel/panel-content/panel-con
     MenuComponent,
     MenuListComponent,
     MenuPanelComponent,
-    PanelContentComponent
+    PanelContentComponent,
+    ButtonPanelComponent,
+    ImgPanelComponent,
+    SecondButtonPanelComponent
   ],
   imports: [
     BrowserModule
