@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@angular/core';
 
 @Component({
@@ -7,13 +8,13 @@ import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@a
 })
 export class MenuListComponent implements OnInit {
   KContents = ['nVizyonumuz ve Misyonumuz', 'nTemel Değerlerimiz ve Yönetim Politikamız', 'tOrganizasyon Yapısı', 'nLogo ve Kurumsal Kimlik', 'nOda Hesapları', 'nStratejik Planlar ve Çalışma Programları', 'nKardeş Odalar', 'nKVKK', 'yEtkinlik Takvimi', 'nHizmet Rehberi'];
-  KDrop = ['tYönetim Kurulu', 'tMeclis', 'tDisiplin Kurulu', 'yMeslek Kurulu Üyeleri', 'yOrganizasyon Şeması']
+  KDrop = ['tYönetim Kurulu', 'tMeclis', 'tDisiplin Kurulu', 'tMeslek Kurulu Üyeleri', 'tOrganizasyon Şeması', 'yÖzel Gün ve Haftalar Takvimi', 'yKomite Toplantı Takvimi']
 
   EContents = ['nMeslek Komitesi Çalışmaları', 'nTemel Değerlerimiz ve Yönetim Politikamız', 'tE-Formlar', 'yBilgi Edinme Birimi', 'nVizyon Dergisi']
   EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Üye Memnuniyeti Anketi', 'tMeslek Komiteleri İletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'tGüncelleme', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
 
   UContents = ['tÜyelik İşlemleri', 'yÜyeler', 'nİZTO Hizmet Standartları', 'nFaaliyet Kodları ve Meslek Grupları Tanımları'];
-  UDrop = ['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizöet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar', 'yÜye Firma Sorgulama', 'yYeni Üye Kayıt O nline Takip']
+  UDrop = ['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizmet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar']
 
   DContents = ['tDuyurular', 'nEğitimler'];
   DDrop = ['tGenel Duyurular', 'tOda Duyurular', 'tFuar Duyuruları', 'tDış Ticaret Duyuruları', 'tTicaret Sicil Duyuruları'];
@@ -37,11 +38,12 @@ export class MenuListComponent implements OnInit {
     this.toParent.emit(value);
   }
 
-
-
-  indexFind() {
-
+  someFunc() {
+    document.getElementById('react').classList.add('active');
   }
+
+
+  indexFind() { }
 
   constructor() {
     console.log(this.int);

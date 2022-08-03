@@ -21,7 +21,7 @@ export class AppComponent {
     this.loadedOption = opt;
   }
 
-  onDropShown(ot: string){
+  onDropShown(ot: string) {
     this.loadedNavDropOption = ot;
   }
 

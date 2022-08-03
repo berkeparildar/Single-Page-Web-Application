@@ -8,11 +8,11 @@ nav img {
     position: relative;
 }
 
-#navbarDropdownMenuLink{
-color: #1d3557;
+#navbarDropdownMenuLink {
+    color: #1d3557;
 }
 
-#navbarDropdownMenuLink:hover{
+#navbarDropdownMenuLink:hover {
     color: #457b9d;
 }
 
@@ -46,22 +46,27 @@ color: #1d3557;
 }
 
 .hbs-font {
-    font-size: 1rem;
+    font-size: 13px;
     color: #1d3557;
 }
 
 
 .dropdown-menu ul li a {
     color: #1d3557;
-    font-size: 0.9rem;
-}
-
-.dropdown-menu ul li ul li a {
-    color: #1d3557;
     font-size: 0.8rem;
 }
 
-.nav-link{
+span {
+    vertical-align: bottom;
+}
+
+
+.dropdown-menu ul li ul li a {
+    color: #1d3557;
+    font-size: 0.7rem;
+}
+
+.nav-link {
     color: #1d3557;
 }
 

@@ -15,6 +15,7 @@ import { PanelContentComponent } from './menu/menu-panel/panel-content/panel-con
 import { ButtonPanelComponent } from './main/button-panel/button-panel.component';
 import { ImgPanelComponent } from './main/img-panel/img-panel.component';
 import { SecondButtonPanelComponent } from './main/second-button-panel/second-button-panel.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SecondButtonPanelComponent } from './main/second-button-panel/second-bu
     PanelContentComponent,
     ButtonPanelComponent,
     ImgPanelComponent,
-    SecondButtonPanelComponent
+    SecondButtonPanelComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule

@@ -9,6 +9,7 @@ ul {
     background-color: #1d3557;
     justify-content: center;
 }
+
 ul a {
     border: 2px solid #1d3557;
     transition: 0.3s;
@@ -17,13 +18,17 @@ ul a {
     padding-left: 0.5rem;
 }
 
-ul a:hover{
+ul a:hover {
     cursor: pointer;
     background-color: #457b9d;
     color: #f1faee;
     border: 2px solid #f1faee;
     border-left: rgba(178, 34, 34, 0);
     border-right: rgba(178, 34, 34, 0);
+}
+
+.active {
+    background-color: aqua;
 }
 
 ul ul li {
@@ -33,11 +38,12 @@ ul ul li {
     padding-bottom: 0.1rem;
     width: 100%;
 }
+
 ul ul li {
     font-size: 0.8rem;
 }
 
-ul ul li a{
+ul ul li a {
     padding: 1rem;
 }
 
