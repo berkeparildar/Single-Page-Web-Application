@@ -65,30 +65,14 @@
                                                 subdirectory_arrow_right
                                             </span>Yönetim Kurulu</a></li>
                                     <li>
-                                        <ul class="list-unstyled"><a href="#" (click)="onSelect('menu')"
-                                                (click)="onSelectNav('Kurumsal')" (click)="onSelectDrop('xMeclis')"
-                                                class="dropdown-item"><span style="font-size: 0.8rem;"
-                                                    class="material-symbols-outlined">
-                                                    subdirectory_arrow_right
-                                                </span>Meclis</a>
-                                            <li class="ml-2"><a href="#" (click)="onSelect('menu')"
-                                                    (click)="onSelectNav('Kurumsal')"
-                                                    (click)="onSelectDrop('xBaşkanlık Divanı')"
-                                                    class="dropdown-item"><span style="font-size: 0.8rem;"
-                                                        class="material-symbols-outlined">
-                                                        subdirectory_arrow_right
-                                                    </span>Meclis
-                                                    Başkanlık Divanı</a>
-                                            </li>
-                                            <li class="ml-2"><a href="#" (click)="onSelect('menu')"
-                                                    (click)="onSelectNav('Kurumsal')"
-                                                    (click)="onSelectDrop('xMeclis Üyeleri')"
-                                                    class="dropdown-item"><span style="font-size: 0.8rem;"
-                                                        class="material-symbols-outlined">
-                                                        subdirectory_arrow_right
-                                                    </span>Meclis Üyeleri</a></li>
-                                        </ul>
+                                    <li><a href="#" (click)="onSelect('menu')" (click)="onSelectNav('Kurumsal')"
+                                            (click)="onSelectDrop('xMeclis')" class="dropdown-item"><span
+                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Meclis</a>
+
                                     </li>
+
                                     <li><a href="#" (click)="onSelect('menu')" (click)="onSelectNav('Kurumsal')"
                                             (click)="onSelectDrop('xDisiplin Kurulu')" class="dropdown-item"><span
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
@@ -164,7 +148,9 @@
                                     Çalışmaları</a>
                             </li>
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a href="#" class="dropdown-item">E-Formlar</a>
+                                <ul class="list-unstyled"> <a href="#" (click)="onSelect('menu')"
+                                        (click)="onSelectNav('E-Oda')" (click)="onSelectDrop('xE-Formlar')"
+                                        class="dropdown-item">E-Formlar</a>
                                     <li><a href="#" (click)="onSelect('menu')" (click)="onSelectNav('E-Oda')"
                                             (click)="onSelectDrop('xÜye Bilgi Güncelleme Formu')"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
@@ -182,7 +168,7 @@
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Çağrı Merkezi Üye Memnuniyeti Anketi</a></li>
-                                    <li><a href="#" (click)="onSelectDrop('xMeslek Komteleri İletişim Formu')"
+                                    <li><a href="#" (click)="onSelectDrop('xMeslek Komiteleri İletişim Formu')"
                                             (click)="onSelect('menu')" (click)="onSelectNav('E-Oda')"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">

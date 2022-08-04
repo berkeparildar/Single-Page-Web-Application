@@ -16,6 +16,13 @@ import { ButtonPanelComponent } from './main/button-panel/button-panel.component
 import { ImgPanelComponent } from './main/img-panel/img-panel.component';
 import { SecondButtonPanelComponent } from './main/second-button-panel/second-button-panel.component';
 import { ContactComponent } from './contact/contact.component';
+import { KurumsalComponent } from './menu/menu-panel/panel-content/kurumsal/kurumsal.component';
+import { EodaComponent } from './menu/menu-panel/panel-content/eoda/eoda.component';
+import { UyeComponent } from './menu/menu-panel/panel-content/uye/uye.component';
+import { DveComponent } from './menu/menu-panel/panel-content/dve/dve.component';
+import { TicaretComponent } from './menu/menu-panel/panel-content/ticaret/ticaret.component';
+import { BankComponent } from './menu/menu-panel/panel-content/bank/bank.component';
+import { IztotamComponent } from './menu/menu-panel/panel-content/iztotam/iztotam.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +41,14 @@ import { ContactComponent } from './contact/contact.component';
     ButtonPanelComponent,
     ImgPanelComponent,
     SecondButtonPanelComponent,
-    ContactComponent
+    ContactComponent,
+    KurumsalComponent,
+    EodaComponent,
+    UyeComponent,
+    DveComponent,
+    TicaretComponent,
+    BankComponent,
+    IztotamComponent
   ],
   imports: [
     BrowserModule

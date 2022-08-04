@@ -10,8 +10,8 @@ export class MenuListComponent implements OnInit {
   KContents = ['nVizyonumuz ve Misyonumuz', 'nTemel Değerlerimiz ve Yönetim Politikamız', 'tOrganizasyon Yapısı', 'nLogo ve Kurumsal Kimlik', 'nOda Hesapları', 'nStratejik Planlar ve Çalışma Programları', 'nKardeş Odalar', 'nKVKK', 'yEtkinlik Takvimi', 'nHizmet Rehberi'];
   KDrop = ['tYönetim Kurulu', 'tMeclis', 'tDisiplin Kurulu', 'tMeslek Kurulu Üyeleri', 'tOrganizasyon Şeması', 'yÖzel Gün ve Haftalar Takvimi', 'yKomite Toplantı Takvimi']
 
-  EContents = ['nMeslek Komitesi Çalışmaları', 'nTemel Değerlerimiz ve Yönetim Politikamız', 'tE-Formlar', 'yBilgi Edinme Birimi', 'nVizyon Dergisi']
-  EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Üye Memnuniyeti Anketi', 'tMeslek Komiteleri İletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'tGüncelleme', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
+  EContents = ['nMeslek Komitesi Çalışmaları', 'tE-Formlar', 'yBilgi Edinme Birimi', 'nVizyon Dergisi']
+  EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Memnuniyeti Anketi', 'tMeslek Komiteleri İletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'tGüncelleme', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
 
   UContents = ['tÜyelik İşlemleri', 'yÜyeler', 'nİZTO Hizmet Standartları', 'nFaaliyet Kodları ve Meslek Grupları Tanımları'];
   UDrop = ['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizmet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar']
