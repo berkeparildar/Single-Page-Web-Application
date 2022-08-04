@@ -331,7 +331,7 @@
                             <li class="my-1">
                                 <ul class="list-unstyled"> <a href="#" (click)="onSelect('menu')"
                                         (click)="onSelectNav('Duyuru ve Etkinlikler')"
-                                        class="dropdown-item">Duyurular</a>
+                                        (click)="onSelectDrop('tDuyurular')" class="dropdown-item">Duyurular</a>
                                     <li><a href="#" (click)="onSelectDrop('xGenel Duyurular')"
                                             (click)="onSelect('menu')" (click)="onSelectNav('Duyuru ve Etkinlikler')"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
@@ -513,9 +513,44 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xArabuluculuk Sürecinin Temel Nitelikleri')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('İZTOTAM')"
-                                    class="dropdown-item">Arabuluculuk Sürecinin Temel Nitelikleri</a>
+                                <ul class="list-unstyled"> <a href="#" (click)="onSelect('menu')"
+                                        (click)="onSelectNav('İZTOTAM')"
+                                        (click)="onSelectDrop('xArabuluculuk Sürecinin Temel Nitelikleri')"
+                                        class="dropdown-item">
+                                        Arabuluculuk Sürecinin Temel Nitelikleri
+                                    </a>
+                                    <li><a href="#" (click)="onSelectDrop('xAlternatif Çözüm Yolları')"
+                                            (click)="onSelect('menu')" (click)="onSelectNav('İZTOTAM')"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Alternatif Çözüm Yolları</a></li>
+                                    <li><a href="#" (click)="onSelectDrop('xArabuluculuk Kuralları')"
+                                            (click)="onSelect('menu')" (click)="onSelectNav('İZTOTAM')"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Arabuluculuk Kuralları</a></li>
+                                    <li><a href="#" (click)="onSelectDrop('xArabulucu Listesi')"
+                                            (click)="onSelect('menu')" (click)="onSelectNav('İZTOTAM')"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Arabulucu Listesi</a></li>
+                                    <li><a href="#" (click)="onSelectDrop('xArabuluculuk Süreci Akış Şeması')"
+                                            (click)="onSelect('menu')" (click)="onSelectNav('İZTOTAM')"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>
+                                            Arabuluculuk Süreci Akış Şeması</a></li>
+                                    <li><a href="#" (click)="onSelectDrop('xKolay Başvuru')" (click)="onSelect('menu')"
+                                            (click)="onSelectNav('İZTOTAM')" class="dropdown-item"><span
+                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>
+                                            Kolay Başvuru</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>

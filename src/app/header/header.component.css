@@ -50,6 +50,9 @@ nav img {
     color: #1d3557;
 }
 
+.dropdown-menu {
+    left: -60%;
+}
 
 .dropdown-menu ul li a {
     color: #1d3557;

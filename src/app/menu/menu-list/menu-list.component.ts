@@ -20,15 +20,18 @@ export class MenuListComponent implements OnInit {
   DDrop = ['tGenel Duyurular', 'tOda Duyurular', 'tFuar Duyuruları', 'tDış Ticaret Duyuruları', 'tTicaret Sicil Duyuruları'];
 
   IContents = ['nİzmir Ticaret Odası İhalelerimiz', 'nİZTO Eğitim ve Sağlık Vakfı İhaleleri', 'nİZQ İhaleleri', 'nİzmir Ekonomi Üniversitesi İhaleleri', 'nİZFAŞ İhaleleri'];
-
+  IDrop = ['dad'];
   TContents = ['nİhracat Destek Ofisi', 'nGirişimcilik', 'nVize Hizmetleri', 'nFuarlar', 'nİhaleler'];
+  TDrop = ['dsadsadsa'];
 
   BContents = ['nTicaret Sicili Rehberi', 'nOda Sicili Rehberi', 'nTicari İşletme Tanımları', 'nTicari İşlemler Rehberi', 'nKruvaziyer Turizmi', 'nHukuk Sahfası', 'nFire ve Zaiyat Oranları', 'nGayrimenkul Danışmanlığı', 'nYenişehir Ticaret Merkezi', 'nUlusal ve Uluslararası Bağlantılar', 'nİzmir Ticaret Odası İhracatçı Firmalar Listesi', 'nİzmir', 'nSıkça Sorulan Sorular'];
+  BDrop = ['dsadssad'];
 
-  ZContents = ['nArabuluculuk Sürecinin Temel Nitelikleri'];
+  ZContents = ['yArabuluculuk Sürecinin Temel Nitelikleri'];
+  ZDrop = ['yAlternatif Çözüm Yolları', 'yArabuluculuk Kuralları', 'yArabulucu Listesi', 'yArabuluculuk Süreci Akış Şeması', 'tKolay Başvuru'];
 
   ray = [this.KContents, this.EContents, this.UContents, this.DContents, this.IContents, this.TContents, this.BContents, this.ZContents];
-  dRay = [this.KDrop, this.EDrop, this.UDrop, this.DDrop];
+  dRay = [this.KDrop, this.EDrop, this.UDrop, this.DDrop, this.IDrop, this.TDrop, this.BDrop, this.ZDrop];
 
   @Input('ind') num: number = 0;
   @Input('ArrayIndex') int: number = 0;
