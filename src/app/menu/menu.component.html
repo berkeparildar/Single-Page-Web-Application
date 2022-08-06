@@ -1,6 +1,6 @@
 <div class="container py-3 fh">
     <div class="row d-flex justify-content-center align-items-center">
-        <h2>{{headerArray[num]}}</h2>
+        <h2>{{header}}</h2>
     </div>
     <!-- <div class="seperator">
         <div></div>
@@ -13,10 +13,10 @@
     <div class="container">
         <div class="row p-2">
             <div class="col-3">
-                <app-menu-list [ArrayIndex]=num (toParent)="getFromChild($event)"></app-menu-list>
+                <app-menu-list></app-menu-list>
             </div>
             <div class="col-9">
-                <app-menu-panel [header]="headerArray[num]" [tit]=lName [sumIndex]=num ></app-menu-panel>
+                <router-outlet></router-outlet>
             </div>
         </div>
     </div>

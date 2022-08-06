@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@angular/core';
+import { dataTransfer } from 'src/app/dataTransfer.service';
 
 @Component({
   selector: 'app-menu-list',
@@ -7,6 +8,9 @@ import { Component, EventEmitter, Input, OnInit, Output, SimpleChange } from '@a
   styleUrls: ['./menu-list.component.css']
 })
 export class MenuListComponent implements OnInit {
+
+  int:number;
+
   KContents = ['nVizyonumuz ve Misyonumuz', 'nTemel Değerlerimiz ve Yönetim Politikamız', 'tOrganizasyon Yapısı', 'nLogo ve Kurumsal Kimlik', 'nOda Hesapları', 'nStratejik Planlar ve Çalışma Programları', 'nKardeş Odalar', 'nKVKK', 'yEtkinlik Takvimi', 'nHizmet Rehberi'];
   KDrop = ['tYönetim Kurulu', 'tMeclis', 'tDisiplin Kurulu', 'tMeslek Kurulu Üyeleri', 'tOrganizasyon Şeması', 'yÖzel Gün ve Haftalar Takvimi', 'yKomite Toplantı Takvimi']
 
@@ -33,23 +37,10 @@ export class MenuListComponent implements OnInit {
   ray = [this.KContents, this.EContents, this.UContents, this.DContents, this.IContents, this.TContents, this.BContents, this.ZContents];
   dRay = [this.KDrop, this.EDrop, this.UDrop, this.DDrop, this.IDrop, this.TDrop, this.BDrop, this.ZDrop];
 
-  @Input('ind') num: number = 0;
-  @Input('ArrayIndex') int: number = 0;
-  @Output() toParent = new EventEmitter<string>();
-
-  sendFunc(value: string) {
-    this.toParent.emit(value);
-  }
-
-  someFunc() {
-    document.getElementById('react').classList.add('active');
-  }
 
 
-  indexFind() { }
-
-  constructor() {
-    console.log(this.int);
+  constructor(private service: dataTransfer) {
+    this.service.indexUpdated.subscribe((status:number) => {this.int = status;})
   }
   ngOnInit(): void { }
 }

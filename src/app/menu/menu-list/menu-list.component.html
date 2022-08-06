@@ -1,9 +1,9 @@
 <ul class="py-3 list-unstyled rounded-lg shadow-lg">
     <ul href="##" *ngFor="let bname of ray[int]" class="py-1 shadow-lg">
-        <a (click)="sendFunc(bname)" class="py-2"> {{ray[int][ray[int].indexOf(bname)].substring(1, bname.length)}} </a>
+        <a  class="py-2"> {{ray[int][ray[int].indexOf(bname)].substring(1, bname.length)}} </a>
         <ng-container *ngIf="bname.substring(0,1) === 't'">
             <ng-container *ngFor="let suam of dRay[int]" href="">
-                <li (click)="sendFunc(suam)" *ngIf="suam.substring(0,1)=== 't'">
+                <li  *ngIf="suam.substring(0,1)=== 't'">
                     <a> <span style="font-size: 0.8rem;"
                             class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
                         suam.length)}}</a>
@@ -12,7 +12,7 @@
         </ng-container>
         <ng-container *ngIf="bname.substring(0,1) === 'y'">
             <ng-container *ngFor="let suam of dRay[int]" href="">
-                <li (click)="sendFunc(suam)" *ngIf="suam.substring(0,1)=== 'y' ">
+                <li  *ngIf="suam.substring(0,1)=== 'y' ">
                     <a> <span style="font-size: 0.8rem;"
                             class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
                         suam.length)}}</a>
