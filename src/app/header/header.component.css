@@ -21,6 +21,10 @@ nav img {
     margin-left: 10%;
 }
 
+span {
+    vertical-align: bottom;
+}
+
 .hbf div div a {
     color: #f1faee;
 }
@@ -46,13 +50,11 @@ nav img {
 }
 
 .hbs-font {
-    font-size: 13px;
+    font-size: 16px;
     color: #1d3557;
 }
 
-.dropdown-menu {
-    left: -60%;
-}
+
 
 .dropdown-menu ul li a {
     color: #1d3557;

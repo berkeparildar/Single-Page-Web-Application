@@ -8,15 +8,17 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="#"><i id="env" class="material-symbols-outlined"> support_agent
+                <a class="nav-link active" href="tel:444%2092%2092"><i id="env" class="material-symbols-outlined"> support_agent
                     </i> Çağrı Merkezi <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#"><i id="env" class="material-symbols-outlined">mail</i>
+                <a class="nav-link" href="mailto:info@izto.org.tr"><i id="env" class="material-symbols-outlined">mail</i>
                     e-Posta</a>
-                <a class="nav-link" href="#"><i id="env" class="material-symbols-outlined">group</i> Sosyal</a>
                 <a class="nav-link" href="#"><i id="env" class="material-symbols-outlined">speed</i>Hızlı
                     Erişim</a>
-                <a class="nav-link" href="#"><i id="env" class="material-symbols-outlined">language</i> Online
+                <a class="nav-link" href="https://eoda.izto.org.tr/web_ana_sayfa.aspx" target="_blank"><i id="env" class="material-symbols-outlined">language</i> Online
                     İşlemler</a>
+                <a class="nav-link" href="https://www.instagram.com/iztokurumsal/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a class="nav-link" href="https://twitter.com/iztokurumsal" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a class="nav-link" href="https://tr-tr.facebook.com/iztokurumsal" target="_blank"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
     </nav>
@@ -39,14 +41,12 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a routerLink="menu/pc/kurumsal/vizyonumuz-misyonumuz" class="dropdown-item" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Kurumsal')"
-                                    (click)="onSelectDrop('xVizyonumuz ve Misyonumuz')">Vizyonumuz
+                                <a routerLink="menu/pc/kurumsal/vizyonumuz-ve-misyonumuz" class="dropdown-item">Vizyonumuz
                                     ve
                                     Misyonumuz</a>
                             </li>
                             <li class="my-1">
-                                <a routerLink="menu/pc/kurumsal/temel-deger-yonetim" class="dropdown-item" >Temel
+                                <a routerLink="menu/pc/kurumsal/temel-degerlerimiz-ve-yonetim-politikamiz" class="dropdown-item" >Temel
                                     Değerlerimiz
                                     ve
                                     Yönetim Politikamız</a>
@@ -70,12 +70,6 @@
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Disiplin Kurulu</a></li>
-                                    <li><a href="#" (click)="onSelect('menu')" (click)="onSelectNav('Kurumsal')"
-                                            (click)="onSelectDrop('xMeslek Kurulu Üyeleri')"
-                                            class=" dropdown-item"><span style="font-size: 0.8rem;"
-                                                class="material-symbols-outlined">
-                                                subdirectory_arrow_right
-                                            </span>Meslek Kurulu Üyeleri</a></li>
                                     <li>
                                         <a routerLink="menu/pc/kurumsal/organizasyon-semasi"
                                             class="dropdown-item"><span
@@ -85,13 +79,13 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a routerLink="menu/pc/kurumsal/logo"
+                            <li><a routerLink="menu/pc/kurumsal/logo-ve-kurumsal-kimlik"
                                     class="dropdown-item">Logo ve
                                     Kurumsal Kimlik</a></li>
-                            <li><a routerLink="menu/pc/kurumsal/oda-hesap"
+                            <li><a routerLink="menu/pc/kurumsal/oda-hesaplari"
                                     class="dropdown-item">Oda Hesapları</a>
                             </li>
-                            <li><a routerLink="menu/pc/kurumsal/stratejik-plan"
+                            <li><a routerLink="menu/pc/kurumsal/stratejik-planlar-ve-calisma-programlari"
                                     class="dropdown-item"
                                     >Stratejik
                                     Planlar ve Çalışma Programları</a>
@@ -105,14 +99,14 @@
                                 <ul><a routerLink="menu/pc/kurumsal/etkinlik-takvimi"
                                         class="dropdown-item">Etkinlik
                                         Takvimi</a>
-                                    <li><a routerLink="menu/pc/kurumsal/ozel-gun-takvimi"
+                                    <li><a routerLink="menu/pc/kurumsal/ozel-gun-ve-haftalar-takvimi"
                                             class="dropdown-item"
                                             ><span
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Özel Gün ve Haftalar Takvimi</a>
                                     </li>
-                                    <li><a routerLink="menu/pc/kurumsal/komite-takvimi"
+                                    <li><a routerLink="menu/pc/kurumsal/komite-toplanti-takvimi"
                                             class="dropdown-item"
                                             ><span
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
@@ -134,28 +128,28 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a routerLink="menu/pc/eoda/meslek-komite" class="dropdown-item">Meslek Komitesi
+                                <a routerLink="menu/pc/e-oda/meslek-komitesi-calismalari" class="dropdown-item">Meslek Komitesi
                                     Çalışmaları</a>
                             </li>
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a routerLink="menu/pc/eoda/eformlar"
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/e-oda/e-formlar"
                                         class="dropdown-item">E-Formlar</a>
-                                    <li><a routerLink="menu/pc/eoda/uye-bilgi-guncelleme"
+                                    <li><a routerLink="menu/pc/e-oda/uye-bilgi-guncelleme-formu"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Üye Bilgi Güncelleme Formu</a></li>
-                                    <li><a routerLink="menu/pc/eoda/asd"
+                                    <li><a routerLink="menu/pc/e-oda/uye-memnuniyet-anketi"
                                             class="dropdown-item"><span
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Üye Memnuniyet Anketi</a></li>
-                                    <li><a routerLink="menu/pc/eoda/cagri-memnuniyet"
+                                    <li><a routerLink="menu/pc/e-oda/cagri-merkezi-uye-memnuniyeti-anketi"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Çağrı Merkezi Üye Memnuniyeti Anketi</a></li>
-                                    <li><a routerLink="menu/pc/eoda/meslek-komite-iletisim-formu"
+                                    <li><a routerLink="menu/pc/e-oda/meslek-komiteleri-iletisim-formu"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
@@ -214,49 +208,49 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a routerLink="menu/pc/uye-uyeler/uyelik-islemleri" class="dropdown-item">Üyelik
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/uyelik-ve-uyeler/uyelik-islemleri" class="dropdown-item">Üyelik
                                         İşlemleri</a>
-                                    <li><a routerLink="menu/pc/uye-uyeler/online-uye-bilgi-guncelleme"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/online-uye-bilgi-guncelleme"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Online Üye Bilgi Güncelleme</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/ek-faaliyet-kodu-dilekce"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/ek-faaliyet-kodu-talebi-dilekcesi"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Ek Faaliyet Kodu Talebi Dilekçesi</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/faaliyet-kodu-degisiklik"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/faaliyet-kodu-degisiklik-talebi-dilekcesi"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Faaliyet Kodu Değişiklik Talebi Dilekçesi</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/oda-kayit-beyanname"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/oda-kayit-beyannameleri"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Oda Kayıt Beyannameleri</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/uyelik-avantajlari"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/uyelik-avantajlari"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Üyelik Avantajları</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/uyelik-ucretleri"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/uyelik-ucretleri"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Üyelik Ücretleri</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/2022-hizmet-tarifesi"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/2022-hizmet-ucretleri-tarifesi"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>2022 Hizmet Ücretleri Tarifesi</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/aidat-odemeleri"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/aidat-odemeleri"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Aidat Ödemeleri</a></li>
-                                    <li><a routerLink="menu/pc/uye-uyeler/indirimli-kuruluslar"
+                                    <li><a routerLink="menu/pc/uyelik-ve-uyeler/indirimli-kuruluslar"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
@@ -264,12 +258,12 @@
                                 </ul>
                             </li>
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a routerLink="menu/pc/uye-uyeler/uyeler"
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/uyelik-ve-uyeler/uyeler"
                                         class="dropdown-item">Üyeler</a>
                                 </ul>
                             </li>
                             <li class="my-1">
-                                <a routerLink="menu/pc/uye-uyeler/hizmet-standart"
+                                <a routerLink="menu/pc/uyelik-ve-uyeler/izto-hizmet-standartlari"
                                     class="dropdown-item">İZTO Hizmet Standartları</a>
                             </li>
                         </ul>
@@ -283,27 +277,27 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a routerLink="menu/pc/duyurular-egitim/duyurular" class="dropdown-item">Duyurular</a>
-                                    <li><a routerLink="menu/pc/duyurular-egitim/genel-duyurular"
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/duyurular-ve-etkinlikler/duyurular" class="dropdown-item">Duyurular</a>
+                                    <li><a routerLink="menu/pc/duyurular-ve-etkinlikler/genel-duyurular"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Genel Duyurular</a></li>
-                                    <li><a routerLink="menu/pc/duyurular-egitim/oda-duyurulari" class="dropdown-item"><span
+                                    <li><a routerLink="menu/pc/duyurular-ve-etkinlikler/oda-duyurulari" class="dropdown-item"><span
                                                 style="font-size: 0.8rem;" class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Oda Duyuruları</a></li>
-                                    <li><a routerLink="menu/pc/duyurular-egitim/fuar-duyurulari"
+                                    <li><a routerLink="menu/pc/duyurular-ve-etkinlikler/fuar-duyurulari"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Fuar Duyuruları</a></li>
-                                    <li><a routerLink="menu/pc/duyurular-egitim/dis-ticaret-duyurulari"
+                                    <li><a routerLink="menu/pc/duyurular-ve-etkinlikler/dis-ticaret-duyurulari"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Dış Ticaret Duyuruları</a></li>
-                                    <li><a routerLink="menu/pc/duyurular-egitim/ticaret-sicil-duyurulari"
+                                    <li><a routerLink="menu/pc/duyurular-ve-etkinlikler/ticaret-sicil-duyurulari"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
@@ -311,7 +305,7 @@
                                 </ul>
                             </li>
                             <li class="my-1">
-                                <a routerLink="menu/pc/duyurular-egitim/egitimler" class="dropdown-item">Eğitimler</a>
+                                <a routerLink="menu/pc/duyurular-ve-etkinlikler/egitimler" class="dropdown-item">Eğitimler</a>
                             </li>
                         </ul>
                     </div>
@@ -324,58 +318,45 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİzmir Ticaret Odası İhalelerimiz')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('İhalelerimiz')"
+                                <a routerLink="menu/pc/ihalelerimiz/izmir-ticaret-odasi-ihalelerimiz"
                                     class="dropdown-item">İzmir Ticaret Odası İhalelerimiz</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİZTO Eğitim ve Sağlık Vakfı İhaleleri')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('İhalelerimiz')"
+                                <a routerLink="menu/pc/ihalelerimiz/izto-egitim-ve-saglik-vakfi-ihaleleri"
                                     class="dropdown-item">İZTO Eğitim ve Sağlık Vakfı İhaleleri </a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİZQ İhaleleri')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('İhalelerimiz')" class="dropdown-item">İZQ İhaleleri</a>
+                                <a routerLink="menu/pc/ihalelerimiz/izq-ihaleleri" class="dropdown-item">İZQ İhaleleri</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİzmir Ekonomi Üniversitesi İhaleleri')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('İhalelerimiz')"
+                                <a routerLink="menu/pc/ihalelerimiz/izmir-ekonomi-universitesi-ihaleleri"
                                     class="dropdown-item">İzmir Ekonomi Üniversitesi İhaleleri</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİZFAŞ İhaleleri')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('İhalelerimiz')" class="dropdown-item">İZFAŞ İhaleleri</a>
+                                <a routerLink="menu/pc/ihalelerimiz/izfas-ihaleleri" class="dropdown-item">İZFAŞ İhaleleri</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle hbs-font" href="#" id="navbarDropdownMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle hbs-font"  id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-expanded="false">
                         Ticaret Noktası
                     </a>
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİhracat Destek Ofisi')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Ticaret Noktası')" class="dropdown-item">İhracat Destek
+                                <a routerLink="menu/pc/ticaret-noktasi/ihracat-destek-ofisi" class="dropdown-item">İhracat Destek
                                     Ofisi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xGirişimcilik')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Ticaret Noktası')" class="dropdown-item">Girişimcilik</a>
+                                <a routerLink="menu/pc/ticaret-noktasi/girisimcilik" class="dropdown-item">Girişimcilik</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xVize Hizmetleri')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Ticaret Noktası')" class="dropdown-item">Vize Hizmetleri</a>
+                                <a routerLink="menu/pc/ticaret-noktasi/vize" class="dropdown-item">Vize Hizmetleri</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xFuarlar')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Ticaret Noktası')" class="dropdown-item">Fuarlar</a>
-                            </li>
-                            <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİhaleler')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Ticaret Noktası')" class="dropdown-item">İhaleler</a>
+                                <a routerLink="menu/pc/ticaret-noktasi/fuarlar" class="dropdown-item">Fuarlar</a>
                             </li>
                         </ul>
                     </div>
@@ -388,64 +369,51 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xTicaret Sicili Rehberi')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Ticaret Sicili
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">Ticaret Sicili
                                     Rehberi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xOda Sicili Rehberi')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Oda Sicili Rehberi</a>
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">Oda Sicili Rehberi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xTicari İşletme Rehberi')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Ticari İşletme
+                                <a routerLink="menu/pc/bilgi-bankasi/ticari-isletme-tanimlari" class="dropdown-item">Ticari İşletme
                                     Tanımları</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xTicari İşlemler Rehberi')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/"
                                     class="dropdown-item">Ticari İşlemler Rehberi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xKruvaziyer Turizmi')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Kruvaziyer Turizmi</a>
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">Kruvaziyer Turizmi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xHukuk Sahfası')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Hukuk Sahfası</a>
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">Hukuk Sahfası</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xFire ve Zaiyat Oranları')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/fire-zaiyat-oran"
                                     class="dropdown-item">Fire ve Zaiyat Oranları</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xGayrimenkul Danışmanlığı')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/"
                                     class="dropdown-item">Gayrimenkul Danışmanlığı</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xYenişehir Ticaret Merkezi')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/"
                                     class="dropdown-item">Yenişehir Ticaret Merkezi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİzmir')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">İzmir</a>
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">İzmir</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xUlusal ve Uluslararası Bağlantılar')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/ulusal-uluslararasi-baglanti"
                                     class="dropdown-item">Ulusal ve Uluslararası Bağlantılar</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xİzmir Ticaret Odası İhracatçı Firmalar Listesi')"
-                                    (click)="onSelect('menu')" (click)="onSelectNav('Bilgi Bankası')"
+                                <a routerLink="menu/pc/bilgi-bankasi/ihracatci-firmalar-listesi"
                                     class="dropdown-item">İzmir Ticaret Odası İhracatçı Firmalar Listesi</a>
                             </li>
                             <li class="my-1">
-                                <a href="#" (click)="onSelectDrop('xSıkça Sorulan Sorular')" (click)="onSelect('menu')"
-                                    (click)="onSelectNav('Bilgi Bankası')" class="dropdown-item">Sıkça Sorulan
+                                <a routerLink="menu/pc/bilgi-bankasi/" class="dropdown-item">Sıkça Sorulan
                                     Sorular</a>
                             </li>
                         </ul>
@@ -459,7 +427,7 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <ul class="list-unstyled"> <a routerLink="menu/pc/iztotam/arabuluculuk-sureci"
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/iztotam/arabuluculuk-surecinin-temel-nitelikleri"
                                         class="dropdown-item">
                                         Arabuluculuk Sürecinin Temel Nitelikleri
                                     </a>
@@ -478,7 +446,7 @@
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>Arabulucu Listesi</a></li>
-                                    <li><a routerLink="menu/pc/iztotam/arabuluculuk-akis-semasi"
+                                    <li><a routerLink="menu/pc/iztotam/arabuluculuk-sureci-akis-semasi"
                                             class="dropdown-item"><span style="font-size: 0.8rem;"
                                                 class="material-symbols-outlined">
                                                 subdirectory_arrow_right

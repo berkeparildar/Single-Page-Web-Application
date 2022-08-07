@@ -15,6 +15,7 @@ export class KurumsalComponent implements OnInit {
     this.router.data.subscribe(data => { this.index = data.index });
     this.dataService.dataUpdated.emit(this.header);
     this.dataService.indexUpdated.emit(this.index);
+    this.dataService.toMenuList.emit(this.header);
   }
 
   ngOnInit(): void {

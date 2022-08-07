@@ -30,7 +30,6 @@ import { OrganizasyonComponent } from './menu/panel-content/kurumsal/organizasyo
 import { YonetimComponent } from './menu/panel-content/kurumsal/yonetim/yonetim.component';
 import { MeclisComponent } from './menu/panel-content/kurumsal/meclis/meclis.component';
 import { DisiplinComponent } from './menu/panel-content/kurumsal/disiplin/disiplin.component';
-import { MkuComponent } from './menu/panel-content/kurumsal/mku/mku.component';
 import { OschemeComponent } from './menu/panel-content/kurumsal/oscheme/oscheme.component';
 import { LogoComponent } from './menu/panel-content/kurumsal/logo/logo.component';
 import { OdahesapComponent } from './menu/panel-content/kurumsal/odahesap/odahesap.component';
@@ -71,6 +70,38 @@ import { FdComponent } from './menu/panel-content/dve/fd/fd.component';
 import { DdComponent } from './menu/panel-content/dve/dd/dd.component';
 import { TdComponent } from './menu/panel-content/dve/td/td.component';
 import { EduComponent } from './menu/panel-content/dve/edu/edu.component';
+import { IdoComponent } from './menu/panel-content/ticaret/ido/ido.component';
+import { GirisimcilikComponent } from './menu/panel-content/ticaret/girisimcilik/girisimcilik.component';
+import { VizeComponent } from './menu/panel-content/ticaret/vize/vize.component';
+import { FuarComponent } from './menu/panel-content/ticaret/fuar/fuar.component';
+import { FzoComponent } from './menu/panel-content/bank/fzo/fzo.component';
+import { IflComponent } from './menu/panel-content/bank/ifl/ifl.component';
+import { TitComponent } from './menu/panel-content/bank/tit/tit.component';
+import { UvubComponent } from './menu/panel-content/bank/uvub/uvub.component';
+import { IhalelerComponent } from './menu/panel-content/ihaleler/ihaleler.component';
+import { IztoiComponent } from './menu/panel-content/ihaleler/iztoi/iztoi.component';
+import { IztoesComponent } from './menu/panel-content/ihaleler/iztoes/iztoes.component';
+import { IzqiComponent } from './menu/panel-content/ihaleler/izqi/izqi.component';
+import { IeuiComponent } from './menu/panel-content/ihaleler/ieui/ieui.component';
+import { IiComponent } from './menu/panel-content/ihaleler/ii/ii.component';
+import { CovidComponent } from './menu/panel-content/bank/covid/covid.component';
+import { RaporlarComponent } from './menu/panel-content/bank/raporlar/raporlar.component';
+import { AbComponent } from './menu/panel-content/bank/ab/ab.component';
+import { KentselrComponent } from './menu/panel-content/bank/kentselr/kentselr.component';
+import { SektorelComponent } from './menu/panel-content/bank/sektorel/sektorel.component';
+import { UlrComponent } from './menu/panel-content/bank/ulr/ulr.component';
+import { DtdsComponent } from './menu/panel-content/bank/dtds/dtds.component';
+import { FuarraportlariComponent } from './menu/panel-content/bank/fuarraportlari/fuarraportlari.component';
+import { OsrComponent } from './menu/panel-content/bank/osr/osr.component';
+import { DexComponent } from './menu/panel-content/dve/dex/dex.component';
+import { GemilerComponent } from './menu/panel-content/dve/gemiler/gemiler.component';
+import { DextwoComponent } from './menu/panel-content/dve/dextwo/dextwo.component';
+import { DexthreeComponent } from './menu/panel-content/dve/dexthree/dexthree.component';
+import { DexfourComponent } from './menu/panel-content/dve/dexfour/dexfour.component';
+import { TsrComponent } from './menu/panel-content/bank/tsr/tsr.component';
+import { YtmComponent } from './menu/panel-content/bank/ytm/ytm.component';
+import { GdanismanComponent } from './menu/panel-content/bank/gdanisman/gdanisman.component';
+import { KturizmComponent } from './menu/panel-content/bank/kturizm/kturizm.component';
 
 const allRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -83,72 +114,115 @@ const allRoutes: Routes = [
             {
               path: 'kurumsal', component: KurumsalComponent, data: { header : 'Kurumsal' , index : 0 } ,children: 
               [
-                { path: 'vizyonumuz-misyonumuz', component: VizyonComponent, data: { title: 'Vizyonumuz ve Misyonumuz' } },
-                { path: 'temel-deger-yonetim', component: TdypComponent, data: { title: 'Temel Değerlerimiz ve Yönetim Politikamız'} },
+                { path: 'vizyonumuz-ve-misyonumuz', component: VizyonComponent, data: { title: 'Vizyonumuz ve Misyonumuz' } },
+                { path: 'temel-degerlerimiz-ve-yonetim-politikamiz', component: TdypComponent, data: { title: 'Temel Değerlerimiz ve Yönetim Politikamız'} },
                 { path: 'organizasyon-yapisi', component: OrganizasyonComponent, data: { title: 'Organizasyon Yapısı'} },
                 { path: 'yonetim-kurulu', component: YonetimComponent, data: { title: 'Yönetim Kurulu'} },
                 { path: 'meclis', component: MeclisComponent, data: { title: 'Meclis'} },
-                { path: 'disiplin', component: DisiplinComponent, data: { title: 'Disiplin Kurulu'} },
+                { path: 'disiplin-kurulu', component: DisiplinComponent, data: { title: 'Disiplin Kurulu'} },
                 { path: 'organizasyon-semasi', component: OschemeComponent, data: { title: 'Organizasyon Şeması'} },
-                { path: 'logo', component: LogoComponent, data: { title: 'Logo ve Kurumsal Kimlik'} },
-                { path: 'oda-hesap', component: OdahesapComponent, data: { title: 'Oda Hesapları'} },
-                { path: 'stratejik-plan', component: SpcpComponent, data: { title: 'Stratejik Planlar ve Çalışma Programları'} },
+                { path: 'logo-ve-kurumsal-kimlik', component: LogoComponent, data: { title: 'Logo ve Kurumsal Kimlik'} },
+                { path: 'oda-hesaplari', component: OdahesapComponent, data: { title: 'Oda Hesapları'} },
+                { path: 'stratejik-planlar-ve-calisma-programlari', component: SpcpComponent, data: { title: 'Stratejik Planlar ve Çalışma Programları'} },
                 { path: 'kardes-odalar', component: KardesComponent, data: { title: 'Kardeş Odalar'} },
                 { path: 'kvkk', component: KvkkComponent, data: { title: 'KVKK'} },
                 { path: 'etkinlik-takvimi', component: EtakvimComponent, data: { title: 'Etkinlik Takvimi'} },
-                { path: 'ozel-gun-takvimi', component: OgtComponent, data: { title: 'Özel Gün ve Haftalar Takvimi'} },
-                { path: 'komite-takvimi', component: KttComponent, data: { title: 'Komite Toplantı Takvimi'} },
+                { path: 'ozel-gun-ve-haftalar-takvimi', component: OgtComponent, data: { title: 'Özel Gün ve Haftalar Takvimi'} },
+                { path: 'komite-toplanti-takvimi', component: KttComponent, data: { title: 'Komite Toplantı Takvimi'} },
                 { path: 'hizmet-rehberi', component: HrehberComponent, data: { title: 'Hizmet Rehberi'} }
               ]
             },
             {
-              path: 'eoda', component: EodaComponent, data: { header : 'E-Oda', index : 1}, children:
+              path: 'e-oda', component: EodaComponent, data: { header : 'E-Oda', index : 1}, children:
               [
-                {path: 'meslek-komite', component: MkcComponent, data: {title : 'Meslek Komitesi Çalışmaları'}},
-                {path: 'eformlar', component: EformlarComponent, data: {title : 'E-Formlar'}},
-                {path: 'uye-bilgi-guncelleme', component: UbgfComponent, data: {title : 'Üye Bilgi Güncelleme Formu'}},
-                {path: 'asd', component: UmaComponent, data: {title : 'Üye Memnuniyet Anketi'}},
-                {path: 'cagri-memnuniyet', component: CmaComponent, data: {title : 'Çağrı Merkezi Memnuniyeti Anketi'}},
-                {path: 'meslek-komite-iletisim-formu', component: MkiComponent, data: {title : 'Meslek Komiteleri İletişim Formu'}}
+                {path: 'meslek-komitesi-calismalari', component: MkcComponent, data: {title : 'Meslek Komitesi Çalışmaları'}},
+                {path: 'e-formlar', component: EformlarComponent, data: {title : 'E-Formlar'}},
+                {path: 'uye-bilgi-guncelleme-formu', component: UbgfComponent, data: {title : 'Üye Bilgi Güncelleme Formu'}},
+                {path: 'uye-memnuniyet-anketi', component: UmaComponent, data: {title : 'Üye Memnuniyet Anketi'}},
+                {path: 'cagri-merkezi-memnuniyeti-anketi', component: CmaComponent, data: {title : 'Çağrı Merkezi Memnuniyeti Anketi'}},
+                {path: 'meslek-komiteleri-iletisim-formu', component: MkiComponent, data: {title : 'Meslek Komiteleri Iletişim Formu'}}
               ]
             },
             {
               path: 'iztotam', component: IztotamComponent, data: { header: 'IZTOTAM', index: 7}, children:
               [
-                {path: 'arabuluculuk-sureci', component: AstnComponent, data: { title: 'Arabuluculuk Sürecinin Temel Nitelikleri'} },
+                {path: 'arabuluculuk-surecinin-temel-nitelikleri', component: AstnComponent, data: { title: 'Arabuluculuk Sürecinin Temel Nitelikleri'} },
                 {path: 'alternatif-cozum-yollari', component: AcyComponent, data: { title: 'Alternatif Çözüm Yolları'}},
                 {path: 'arabuluculuk-kurallari', component: AkComponent, data: { title: 'Arabuluculuk Kuralları'}},
-                {path: 'arabulucu-listesi', component: AlComponent, data: { title: 'Atabulucu Listesi'}},
-                {path: 'arabuluculuk-akis-semasi',component: AsasComponent, data: {title: 'Arabuluculuk Süreci Akış Şeması'}}
+                {path: 'arabulucu-listesi', component: AlComponent, data: { title: 'Arabulucu Listesi'}},
+                {path: 'arabuluculuk-sureci-akis-semasi',component: AsasComponent, data: {title: 'Arabuluculuk Süreci Akış Şeması'}}
               ]
             },
             {
-              path: 'uye-uyeler', component: UyeComponent, data: { header: 'Üyelik ve Üyeler', index: 2}, children:[
+              path: 'uyelik-ve-uyeler', component: UyeComponent, data: { header: 'Üyelik ve Üyeler', index: 2}, children:[
                 {path: 'uyelik-islemleri', component: UyelikislemlerComponent, data: { title: 'Üyelik İşlemleri'} },
                 {path: 'online-uye-bilgi-guncelleme', component: OubgComponent, data: { title: 'Online Üye Bilgi Güncelleme'}},
-                {path: 'ek-faaliyet-kodu-dilekce', component: EfkComponent, data: { title: 'Ek Faaliyet Kodu Talebi Dilekçesi'}},
-                {path: 'faaliyet-kodu-degisiklik', component: FkdComponent, data: { title: 'Faaliyet Kodu Değişiklik Talebi Dilekçesi'}},
-                {path: 'oda-kayit-beyanname',component: OkbComponent, data: {title: 'Oda Kayıt Beyannameleri'}},
+                {path: 'ek-faaliyet-kodu-talebi-dilekcesi', component: EfkComponent, data: { title: 'Ek Faaliyet Kodu Talebi Dilekçesi'}},
+                {path: 'faaliyet-kodu-degisiklik-talebi-dilekcesi', component: FkdComponent, data: { title: 'Faaliyet Kodu Değişiklik Talebi Dilekçesi'}},
+                {path: 'oda-kayit-beyannameleri',component: OkbComponent, data: {title: 'Oda Kayıt Beyannameleri'}},
                 {path: 'uyelik-avantajlari', component: UaComponent, data: { title: 'Üyelik Avantajları'}},
                 {path: 'uyelik-ucretleri', component: UuComponent, data: { title: 'Üyelik Ücretleri'}},
-                {path: '2022-hizmet-tarifesi',component: HutComponent, data: {title: '2022 Hizmet Ücretleri Tarifesi'}},
+                {path: '2022-hizmet-ucretleri-tarifesi',component: HutComponent, data: {title: '2022 Hizmet Ücretleri Tarifesi'}},
                 {path: 'aidat-odemeleri', component: AoComponent, data: { title: 'Aidat Ödemeleri'}},
                 {path: 'indirimli-kuruluslar', component: IkComponent, data: { title: 'İndirimli Kuruluşlar'}},
                 {path: 'uyeler', component: UyelerComponent, data: { title: 'Üyeler'}},
-                {path: 'hizmet-standart', component: HsComponent, data: { title: 'İZTO Hizmet Standartları'}},
+                {path: 'izto-hizmet-standartlari', component: HsComponent, data: { title: 'İZTO Hizmet Standartları'}},
               ]
             },
             {
-              path: 'duyurular-egitim', component: DveComponent, data: { header: 'Duyurular ve Etkinlikler' , index: 3}, children: [
+              path: 'duyurular-ve-etkinlikler', component: DveComponent, data: { header: 'Duyurular ve Etkinlikler' , index: 3}, children: [
                 {path: 'duyurular', component: DuyurularComponent, data: { title: 'Duyurular'} },
                 {path: 'genel-duyurular', component: GdComponent, data: { title: 'Genel Duyurular'}},
                 {path: 'oda-duyurulari', component: OdComponent, data: { title: 'Oda Duyuruları'}},
                 {path: 'fuar-duyurulari', component: FdComponent, data: { title: 'Fuar Duyuruları'}},
                 {path: 'dis-ticaret-duyurulari',component: DdComponent, data: {title: 'Dış Ticaret Duyuruları'}},
                 {path: 'ticaret-sicil-duyurulari', component: TdComponent, data: { title: 'Ticaret Sicil Duyuruları'}},
-                {path: 'egitimler', component: EduComponent, data: { title: 'Eğitimler'}},
+                {path: 'egitimler', component: FuarComponent, data: { title: 'Eğitimler'}},
+                {path: 'izqda-toplantı-ve-etkinliklerinize-prestij-katın', component: DexComponent, data: { title: 'İZQda Toplantı ve Etkinliklerinize Prestij Katın'}},
+                {path: '2022-yilinda-izmir-limanına-gelecek-olan-kruvaziyer-gemileri', component: GemilerComponent, data: { title: '2022 Yılında İzmir Limanına Gelecek Olan Kruvaziyer Gemileri'}},
+                {path: 'vergi-mükellefiyet-durumu-kontrolu', component: DextwoComponent, data: { title: 'Vergi Mükellefiyet Durumu Kontrolü'}},
+                {path: 'odamıza-gelmeden-oda-kayıt-isleminizi-elektronik-imza-ile-gerceklestirebilirsiniz', component: DexthreeComponent, data: { title: 'Odamıza Gelmeden, Oda Kayıt İşleminizi Elektronik İmza (E-İmza) İle Gerçekleştirebilirsiniz'}},
+                {path: 'mersis', component: DexfourComponent, data: { title: '01.03.2022 Tarihinden İtibaren Mersis Üzerinde Yapılacak Atama Ve Kuruluş Başvurularında E-İmza Uygulaması Başlıyor'}},
+                
               ]
-            }
+            },
+            {
+              path: 'ticaret-noktasi', component: TicaretComponent, data: { header: 'Ticaret Noktasi' , index: 5}, children: [
+                {path: 'ihracat-destek-ofisi', component: IdoComponent, data: { title: 'İhracat Destek Ofisi'} },
+                {path: 'girisimcilik', component: GirisimcilikComponent, data: { title: 'Girişimcilik'}},
+                {path: 'vize-hizmetleri', component: VizeComponent, data: { title: 'Vize Hizmetleri'}},
+                {path: 'fuarlar', component: FuarComponent, data: { title: 'Fuarlar'}},
+              ]
+            },
+            {
+              path: 'bilgi-bankasi', component: BankComponent, data: { header: 'Bilgi Bankasi' , index: 6}, children: [
+                {path: 'fire-ve-zaiyat-oranlari', component: FzoComponent, data: { title: 'Fire ve Zayiat Oranları'} },
+                {path: 'izmir-ticaret-odasi-ihracatci-firmalar-listesi', component: IflComponent, data: { title: 'İzmir Ticaret Odası İhracatçı Firmalar Listesi'}},
+                {path: 'ticari-isletme-tanimlari', component: TitComponent, data: { title: 'Ticari İşletme Tanımları'}},
+                {path: 'ulusal-ve-uluslararasi-baglantilar', component: UvubComponent, data: { title: 'Ulusal ve Uluslararası Bağlantılar'}},
+                {path: 'covid', component: CovidComponent, data: { title: ''}},
+                {path: 'raporlar', component: RaporlarComponent, data: { title: 'Raporlar'}},
+                {path: 'ab-raporlari', component: AbComponent, data: { title: 'AB Raporları'}},
+                {path: 'kentsel-raporlar', component: KentselrComponent, data: { title: 'Kentsel Raporlar'}},
+                {path: 'sektorel-raporlar', component: SektorelComponent, data: { title: 'Sektörel Raporlar'}},
+                {path: 'ulke-raporlari', component: UlrComponent, data: { title: 'Ülke Raporları'}},
+                {path: 'devlet-tesvikleri-dosyasi', component: DtdsComponent, data: { title: 'Devlet Teşvikleri Dosyası'}},
+                {path: 'fuar-raporlari', component: FuarraportlariComponent, data: { title: 'Fuar Raporları'}},
+                {path: 'oda-sicili-rehberi', component: OsrComponent, data: { title: 'Oda Sicili Rehberi'}},
+                {path: 'yenisehir-ticaret-merkezi', component: YtmComponent, data: { title: 'Yenişehir Ticaret Merkezi'}},
+                {path: 'gayrimenkul-danismanligi', component: GdanismanComponent, data: { title: 'Gayrimenkul Danışmanlığı'}},
+                {path: 'kruvaziyer-turizmi', component: KturizmComponent, data: { title: 'Kruvaziyer Turizmi'}},
+              ]
+            },
+            {
+              path: 'ihalelerimiz', component: BankComponent, data: { header: 'İhalelerimiz' , index: 4}, children: [
+                {path: 'izmir-ticaret-odasi-ihalelerimiz', component: IztoiComponent, data: { title: 'İzmir Ticaret Odası İhaleleri'} },
+                {path: 'izq-ihaleleri', component: IzqiComponent, data: { title: 'İZQ İhaleleri'}},
+                {path: 'izto-egitim-ve-saglik-vakfi-ihaleleri', component: IztoesComponent, data: { title: 'İZTO Eğitim ve Sağlık Vakfi İhaleleri'}},
+                {path: 'izfas-ihaleleri', component: IiComponent, data: { title: 'İZFAŞ İhaleleri'}},
+                {path: 'izmir-ekonomi-universitesi-ihaleleri', component: IeuiComponent, data: { title: 'İzmir Ekonomi Üniversitesi İhaleleri'}},
+              ]
+            },
           ]
       }
     ]
@@ -186,7 +260,6 @@ const allRoutes: Routes = [
     YonetimComponent,
     MeclisComponent,
     DisiplinComponent,
-    MkuComponent,
     OschemeComponent,
     LogoComponent,
     OdahesapComponent,
@@ -211,11 +284,42 @@ const allRoutes: Routes = [
     AoComponent,
     IkComponent,
     UyelerComponent,
-    HsComponent
+    HsComponent,
+    IdoComponent,
+    GirisimcilikComponent,
+    VizeComponent,
+    FuarComponent,
+    FzoComponent,
+    IflComponent,
+    TitComponent,
+    UvubComponent,
+    IhalelerComponent,
+    IztoiComponent,
+    IztoesComponent,
+    IzqiComponent,
+    IeuiComponent,
+    IiComponent,
+    CovidComponent,
+    RaporlarComponent,
+    AbComponent,
+    KentselrComponent,
+    SektorelComponent,
+    UlrComponent,
+    DtdsComponent,
+    FuarraportlariComponent,
+    OsrComponent,
+    DexComponent,
+    GemilerComponent,
+    DextwoComponent,
+    DexthreeComponent,
+    DexfourComponent,
+    TsrComponent,
+    YtmComponent,
+    KturizmComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(allRoutes)
+    RouterModule.forRoot(allRoutes, {scrollPositionRestoration: 'enabled'})
   ],
   providers: [dataTransfer],
   bootstrap: [AppComponent]

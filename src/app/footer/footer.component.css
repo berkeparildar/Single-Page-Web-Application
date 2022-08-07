@@ -1,6 +1,6 @@
 .footer {
     background-image: url(src\assets\materials\footer-bg.jpg);
-    position: static;
+    position: static  ;
     bottom: 0;
     width: 100%;
     display: flex;
