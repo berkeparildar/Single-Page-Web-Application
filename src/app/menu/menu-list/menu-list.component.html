@@ -49,7 +49,13 @@
                     </li>
                 </div>
                 <li *ngIf="suam.substring(0,1)=== 'x' ">
-                    <a href="https://mersis.gtb.gov.tr/Portal/Home">
+                    <a target="_blank" href="https://mersis.gtb.gov.tr/Portal/Home">
+                        <span style="font-size: 0.8rem;"
+                            class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
+                        suam.length)}}</a>
+                </li>
+                <li *ngIf="suam.substring(0,1)=== 'p' ">
+                    <a target="_blank" href="https://www.tobbuyum.com.tr/kolay_basvuru.php">
                         <span style="font-size: 0.8rem;"
                             class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
                         suam.length)}}</a>

@@ -123,6 +123,13 @@ import { TobbslkComponent } from './menu/panel-content/bank/tobbslk/tobbslk.comp
 import { TiisrehComponent } from './menu/panel-content/bank/tiisreh/tiisreh.component';
 import { HukukComponent } from './menu/panel-content/bank/hukuk/hukuk.component';
 import { SssComponent } from './menu/panel-content/bank/sss/sss.component';
+import { TkbfComponent } from './menu/panel-content/eoda/tkbf/tkbf.component';
+import { SikaoneComponent } from './menu/panel-content/eoda/sikaone/sikaone.component';
+import { BebComponent } from './menu/panel-content/eoda/beb/beb.component';
+import { GkibefComponent } from './menu/panel-content/eoda/gkibef/gkibef.component';
+import { TkibefComponent } from './menu/panel-content/eoda/tkibef/tkibef.component';
+import { DexsixComponent } from './menu/panel-content/dve/dexsix/dexsix.component';
+import { DexsevenComponent } from './menu/panel-content/dve/dexseven/dexseven.component';
 
 
 const allRoutes: Routes = [
@@ -162,7 +169,12 @@ const allRoutes: Routes = [
                   { path: 'uye-bilgi-guncelleme-formu', component: UbgfComponent, data: { title: 'Üye Bilgi Güncelleme Formu' } },
                   { path: 'uye-memnuniyet-anketi', component: UmaComponent, data: { title: 'Üye Memnuniyet Anketi' } },
                   { path: 'cagri-merkezi-memnuniyeti-anketi', component: CmaComponent, data: { title: 'Çağrı Merkezi Memnuniyeti Anketi' } },
-                  { path: 'meslek-komiteleri-iletisim-formu', component: MkiComponent, data: { title: 'Meslek Komiteleri Iletişim Formu' } }
+                  { path: 'meslek-komiteleri-iletisim-formu', component: MkiComponent, data: { title: 'Meslek Komiteleri Iletişim Formu' } },
+                  { path: 'ticari-kazanc-beyan-formu', component: TkbfComponent, data: { title: 'Ticari Kazanç Beyan Formu' } },
+                  { path: 'izmir-ticaret-odasi-sikayet-ve-oneri-sureci', component: SikaoneComponent, data: { title: 'İzmir Ticaret Odası Şikayet ve Öneri Süreci' } },
+                  { path: 'bilgi-edinme-birimi', component: BebComponent, data: { title: 'Bilgi Edinme Birimi' } },
+                  { path: 'gercek-kisiler-icin-bilgi-edinme-formu', component: GkibefComponent, data: { title: 'Gerçek Kişiler İçin Bilgi Edinme Formu' } },
+                  { path: 'tuzel-kisiler-icin-bilgi-edinme-formu', component: TkibefComponent, data: { title: 'Tüzel Kişiler İçin Bilgi Edinme Formu' } },
                 ]
             },
             {
@@ -199,12 +211,14 @@ const allRoutes: Routes = [
                 { path: 'fuar-duyurulari', component: FdComponent, data: { title: 'Fuar Duyuruları' } },
                 { path: 'dis-ticaret-duyurulari', component: DdComponent, data: { title: 'Dış Ticaret Duyuruları' } },
                 { path: 'ticaret-sicil-duyurulari', component: TdComponent, data: { title: 'Ticaret Sicil Duyuruları' } },
-                { path: 'egitimler', component: FuarComponent, data: { title: 'Eğitimler' } },
+                { path: 'egitimler', component: EduComponent, data: { title: 'Eğitimler' } },
                 { path: 'izqda-toplantı-ve-etkinliklerinize-prestij-katın', component: DexComponent, data: { title: 'İZQda Toplantı ve Etkinliklerinize Prestij Katın' } },
                 { path: '2022-yilinda-izmir-limanına-gelecek-olan-kruvaziyer-gemileri', component: GemilerComponent, data: { title: '2022 Yılında İzmir Limanına Gelecek Olan Kruvaziyer Gemileri' } },
                 { path: 'vergi-mükellefiyet-durumu-kontrolu', component: DextwoComponent, data: { title: 'Vergi Mükellefiyet Durumu Kontrolü' } },
                 { path: 'odamıza-gelmeden-oda-kayıt-isleminizi-elektronik-imza-ile-gerceklestirebilirsiniz', component: DexthreeComponent, data: { title: 'Odamıza Gelmeden, Oda Kayıt İşleminizi Elektronik İmza (E-İmza) İle Gerçekleştirebilirsiniz' } },
                 { path: 'mersis', component: DexfourComponent, data: { title: '01.03.2022 Tarihinden İtibaren Mersis Üzerinde Yapılacak Atama Ve Kuruluş Başvurularında E-İmza Uygulaması Başlıyor' } },
+                { path: 'izto-meclisinde-gundem-guzelbahce-yerleskesi', component: DexsixComponent, data: { title: 'İZTO Meclisi’nde gündem Güzelbahçe Yerleşkesi' } },
+                { path: 'on-kurum', component: DexsevenComponent, data: { title: '10 Kurum “Atıksız Körfez” İçin İZTO’da Buluştu' } },
 
               ]
             },
@@ -380,7 +394,13 @@ const allRoutes: Routes = [
     TiisrehComponent,
     HukukComponent,
     SssComponent,
-
+    TkbfComponent,
+    SikaoneComponent,
+    BebComponent,
+    GkibefComponent,
+    TkibefComponent,
+    DexsixComponent,
+    DexsevenComponent,
   ],
   imports: [
     BrowserModule,

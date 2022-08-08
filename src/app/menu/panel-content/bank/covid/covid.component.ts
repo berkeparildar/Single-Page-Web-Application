@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-covid',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CovidComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pageName:Title) {
+    this.pageName.setTitle('COVID - 19 TEDBİR VE DESTEKLERİ');
+   }
 
   ngOnInit(): void {
   }

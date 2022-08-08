@@ -17,7 +17,7 @@ export class MenuListComponent implements OnInit {
   KDrop = ['tYönetim Kurulu', 'tMeclis', 'tDisiplin Kurulu', 'tOrganizasyon Şeması', 'yÖzel Gün ve Haftalar Takvimi', 'yKomite Toplantı Takvimi']
 
   EContents = ['nMeslek Komitesi Çalışmaları', 'tE-Formlar', 'yBilgi Edinme Birimi', 'nVizyon Dergisi']
-  EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Memnuniyeti Anketi', 'tMeslek Komiteleri Iletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'tGüncelleme', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
+  EDrop = ['tÜye Bilgi Güncelleme Formu', 'tÜye Memnuniyet Anketi', 'tÇağrı Merkezi Memnuniyeti Anketi', 'tMeslek Komiteleri Iletişim Formu', 'tTicari Kazanç Beyan Formu', 'tİzmir Ticaret Odası Şikayet ve Öneri Süreci', 'yGerçek Kişiler İçin Bilgi Edinme Formu', 'yTüzel Kişiler İçin Bilgi Edinme Formu']
 
   UContents = ['tÜyelik Işlemleri', 'nÜyeler', 'nİZTO Hizmet Standartları',];
   UDrop = ['tOnline Üye Bilgi Güncelleme', 'tEk Faaliyet Kodu Talebi Dilekçesi', 'tFaaliyet Kodu Değişiklik Talebi Dilekçesi', 'tOda Kayıt Beyannameleri', 'tÜyelik Avantajları', 'tÜyelik Ücretleri', 't2022 Hizmet Ücretleri Tarifesi', 'tAidat Ödemeleri', 'tİndirimli Kuruluşlar']
@@ -35,7 +35,7 @@ export class MenuListComponent implements OnInit {
     'yBelge Form ve Örnek', 'xMevzuat', 'yMersis Projesi', 'yGenel Bilgiler', 'yEvrak Kontrol Listesi', 'qAntrepo Belgesi', 'qAta Karnesi', 'qAzami Fiyat Tarifesi', 'qBilirkişi', 'qEkspertiz Raporu', 'qFaydalı Model Belgesi', 'qFiili Tüketim Belgesi', 'qYetkili Temsilcilik Belgesi', 'qYerli Malı Belgesi', 'qTürk Malı Belgesi', 'qTOBB Sigorta Levhaya Kayıt'];
 
   ZContents = ['yArabuluculuk Sürecinin Temel Nitelikleri'];
-  ZDrop = ['yAlternatif Çözüm Yolları', 'yArabuluculuk Kuralları', 'yArabuluculuk Süreci Akış Şeması', 'tKolay Başvuru'];
+  ZDrop = ['yAlternatif Çözüm Yolları', 'yArabuluculuk Kuralları', 'yArabuluculuk Süreci Akış Şeması', 'pKolay Başvuru'];
 
   ray = [this.KContents, this.EContents, this.UContents, this.DContents, this.IContents, this.TContents, this.BContents, this.ZContents];
   dRay = [this.KDrop, this.EDrop, this.UDrop, this.DDrop, this.IDrop, this.TDrop, this.BDrop, this.ZDrop];

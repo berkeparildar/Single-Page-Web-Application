@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,8 +9,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UmaComponent implements OnInit {
   title:string='';
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private pageName:Title) {
     this.route.data.subscribe(data => {this.title = data.title});
+    this.pageName.setTitle('Üye Memnuniyet Anketi');
    }
 
   ngOnInit(): void {

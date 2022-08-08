@@ -1,6 +1,9 @@
 nav img {
     width: 120px;
 }
+ul {
+    list-style-type: none;
+}
 
 .header {
     width: 100%;
