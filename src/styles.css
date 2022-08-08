@@ -9,7 +9,7 @@
 
 body {
     background-image: url(assets/materials/bg.png);
-    background-image: linear-gradient(#1d3557ad, #1d3557ad), url(assets/materials/bg.png);
+    background-image: linear-gradient(#041a39d9, #031023d5), url(assets/materials/bg.png);
     background-size: cover;
     background-color: #f1faee;
     background-repeat: no-repeat;
