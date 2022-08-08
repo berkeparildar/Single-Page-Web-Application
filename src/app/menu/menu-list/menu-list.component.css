@@ -13,9 +13,11 @@ ul {
 ul a {
     border: 2px solid #1d3557;
     transition: 0.3s;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     padding-left: 0.5rem;
+    border-left: none;
+    border-right: none;
 }
 
 ul a:hover {
@@ -23,13 +25,10 @@ ul a:hover {
     background-color: #457b9d;
     color: #f1faee;
     border: 2px solid #f1faee;
-    border-left: rgba(178, 34, 34, 0);
-    border-right: rgba(178, 34, 34, 0);
+    border-left: none;
+    border-right: none;
 }
 
-.active {
-    background-color: aqua;
-}
 
 ul ul li {
     display: flex;
@@ -40,33 +39,9 @@ ul ul li {
 }
 
 ul ul li {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 ul ul li a {
     padding: 1rem;
 }
-
-/* 
-ul li {
-    border: #1d3557 solid 2px;
-    transition: 0.5s;
-}
-a ul {
-    text-decoration: none;
-    border: 2px rgba(178, 34, 34, 0) ;
-}
-
-a ul:hover {
-    background-color: #003566;
-    border: #f1faee solid 2px;
-    border-left: none;
-    border-right: none;
-    cursor: pointer;
-}
-
-
-ul li a:hover {
-    text-decoration: none;
-    color: #f1faee;
-} */

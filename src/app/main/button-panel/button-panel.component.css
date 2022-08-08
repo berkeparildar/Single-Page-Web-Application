@@ -29,8 +29,9 @@
     align-items: center;
 }
 
-.middle-u-c a {
+.middle-u-c i {
     color: #e63946;
     text-decoration: none;
     font-size: 0.8rem;
+    font-style: none;
 }

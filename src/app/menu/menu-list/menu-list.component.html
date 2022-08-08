@@ -1,22 +1,72 @@
 <ul class="py-3 list-unstyled rounded-lg shadow-lg">
-    <ul  *ngFor="let bname of ray[int]" class="py-1 shadow-lg" >
-        <a [routerLink]="'pc/' + func(headerer).toLowerCase().replaceAll(' ','-') + '/' + func(bname.substring(1,bname.length))" class="py-2"> {{ray[int][ray[int].indexOf(bname)].substring(1, bname.length)}} </a>
+    <ul *ngFor="let bname of ray[int]" class="py-1 shadow-lg">
+        <div class="d-flex justify-content-between">
+            <a *ngIf="bname.substring(0,1)==='n'"
+                [routerLink]="'pc/' + func(headerer).toLowerCase().replaceAll(' ','-') + '/' + func(bname.substring(1,bname.length))"
+                class="py-2 col-12" data-toggle="collapse"> {{ray[int][ray[int].indexOf(bname)].substring(1,
+                bname.length)}}
+            </a>
+            <a *ngIf="bname.substring(0,1)==='t'||bname.substring(0,1)==='y'||bname.substring(0,1)==='q'"
+                [routerLink]="'pc/' + func(headerer).toLowerCase().replaceAll(' ','-') + '/' + func(bname.substring(1,bname.length))"
+                class="py-2 col-10" data-toggle="collapse"> {{ray[int][ray[int].indexOf(bname)].substring(1,
+                bname.length)}}
+            </a>
+            <a class="col-2 d-flex align-baseline" *ngIf="bname.substring(0,1)==='t'" data-toggle="collapse"
+                href="#collapseExample"><span class="material-symbols-outlined">
+                    expand_more
+                </span></a>
+            <a class="col-2 d-flex align-baseline" *ngIf="bname.substring(0,1)==='y'" data-toggle="collapse"
+                href="#collapseExample1"><span class="material-symbols-outlined">
+                    expand_more
+                </span></a>
+            <a class="col-2 d-flex align-baseline" *ngIf="bname.substring(0,1)==='q'" data-toggle="collapse"
+                href="#collapseExample2"><span class="material-symbols-outlined">
+                    expand_more
+                </span></a>
+        </div>
         <ng-container *ngIf="bname.substring(0,1) === 't'">
             <ng-container *ngFor="let suam of dRay[int]" href="">
-                <li  *ngIf="suam.substring(0,1)=== 't'">
-                    <a [routerLink]="'pc/' + func(headerer.toLowerCase()).replaceAll(' ','-') + '/' + func(suam.substring(1,suam.length))"> <span style="font-size: 0.8rem;"
+                <div class="collapse" id="collapseExample">
+                    <li *ngIf="suam.substring(0,1)=== 't'">
+                        <a
+                            [routerLink]="'pc/' + func(headerer.toLowerCase()).replaceAll(' ','-') + '/' + func(suam.substring(1,suam.length))">
+                            <span style="font-size: 0.8rem;"
+                                class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
+                            suam.length)}}</a>
+                    </li>
+                </div>
+            </ng-container>
+        </ng-container>
+        <ng-container *ngIf="bname.substring(0,1) === 'y'">
+            <ng-container *ngFor="let suam of dRay[int]" href="">
+                <div class="collapse" id="collapseExample1">
+                    <li *ngIf="suam.substring(0,1)=== 'y'">
+                        <a
+                            [routerLink]="'pc/' + func(headerer.toLowerCase()).replaceAll(' ','-') + '/' + func(suam.substring(1,suam.length))">
+                            <span style="font-size: 0.8rem;"
+                                class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
+                            suam.length)}}</a>
+                    </li>
+                </div>
+                <li *ngIf="suam.substring(0,1)=== 'x' ">
+                    <a href="https://mersis.gtb.gov.tr/Portal/Home">
+                        <span style="font-size: 0.8rem;"
                             class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
                         suam.length)}}</a>
                 </li>
             </ng-container>
         </ng-container>
-        <ng-container *ngIf="bname.substring(0,1) === 'y'">
+        <ng-container *ngIf="bname.substring(0,1) === 'q'">
             <ng-container *ngFor="let suam of dRay[int]" href="">
-                <li  *ngIf="suam.substring(0,1)=== 'y' ">
-                    <a [routerLink]="'pc/' + func(headerer).toLowerCase().replaceAll(' ','-') + '/' + func(suam.substring(1,suam.length).toLowerCase().replaceAll(' ','-'))" > <span style="font-size: 0.8rem;"
-                            class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
-                        suam.length)}}</a>
-                </li>
+                <div class="collapse" id="collapseExample2">
+                    <li *ngIf="suam.substring(0,1)=== 'q'">
+                        <a
+                            [routerLink]="'pc/' + func(headerer.toLowerCase()).replaceAll(' ','-') + '/' + func(suam.substring(1,suam.length))">
+                            <span style="font-size: 0.8rem;"
+                                class="material-symbols-outlined">subdirectory_arrow_right</span>{{dRay[int][dRay[int].indexOf(suam)].substring(1,
+                            suam.length)}}</a>
+                    </li>
+                </div>
             </ng-container>
         </ng-container>
     </ul>
