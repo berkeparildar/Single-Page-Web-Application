@@ -98,7 +98,6 @@ import { GemilerComponent } from './menu/panel-content/dve/gemiler/gemiler.compo
 import { DextwoComponent } from './menu/panel-content/dve/dextwo/dextwo.component';
 import { DexthreeComponent } from './menu/panel-content/dve/dexthree/dexthree.component';
 import { DexfourComponent } from './menu/panel-content/dve/dexfour/dexfour.component';
-import { TsrComponent } from './menu/panel-content/bank/tsr/tsr.component';
 import { YtmComponent } from './menu/panel-content/bank/ytm/ytm.component';
 import { GdanismanComponent } from './menu/panel-content/bank/gdanisman/gdanisman.component';
 import { KturizmComponent } from './menu/panel-content/bank/kturizm/kturizm.component';
@@ -130,6 +129,7 @@ import { GkibefComponent } from './menu/panel-content/eoda/gkibef/gkibef.compone
 import { TkibefComponent } from './menu/panel-content/eoda/tkibef/tkibef.component';
 import { DexsixComponent } from './menu/panel-content/dve/dexsix/dexsix.component';
 import { DexsevenComponent } from './menu/panel-content/dve/dexseven/dexseven.component';
+import { DexeigComponent } from './menu/panel-content/dve/dexeig/dexeig.component';
 
 
 const allRoutes: Routes = [
@@ -219,6 +219,8 @@ const allRoutes: Routes = [
                 { path: 'mersis', component: DexfourComponent, data: { title: '01.03.2022 Tarihinden İtibaren Mersis Üzerinde Yapılacak Atama Ve Kuruluş Başvurularında E-İmza Uygulaması Başlıyor' } },
                 { path: 'izto-meclisinde-gundem-guzelbahce-yerleskesi', component: DexsixComponent, data: { title: 'İZTO Meclisi’nde gündem Güzelbahçe Yerleşkesi' } },
                 { path: 'on-kurum', component: DexsevenComponent, data: { title: '10 Kurum “Atıksız Körfez” İçin İZTO’da Buluştu' } },
+                { path: 'sekiz-oda', component: DexeigComponent, data: { title: '8 Oda ve Borsadan Ankara ziyareti' } },
+                { path: 'balikci', component: DexeigComponent, data: { title: 'Balıkçılar Sorunlarını Masaya Yatırdı' } },
 
               ]
             },
@@ -370,7 +372,6 @@ const allRoutes: Routes = [
     DextwoComponent,
     DexthreeComponent,
     DexfourComponent,
-    TsrComponent,
     YtmComponent,
     KturizmComponent,
     IdestekoComponent,
@@ -401,6 +402,7 @@ const allRoutes: Routes = [
     TkibefComponent,
     DexsixComponent,
     DexsevenComponent,
+    DexeigComponent,
   ],
   imports: [
     BrowserModule,
