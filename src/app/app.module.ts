@@ -130,6 +130,9 @@ import { TkibefComponent } from './menu/panel-content/eoda/tkibef/tkibef.compone
 import { DexsixComponent } from './menu/panel-content/dve/dexsix/dexsix.component';
 import { DexsevenComponent } from './menu/panel-content/dve/dexseven/dexseven.component';
 import { DexeigComponent } from './menu/panel-content/dve/dexeig/dexeig.component';
+import { IparComponent } from './menu/panel-content/ticaret/ipar/ipar.component';
+import { OgiksComponent } from './menu/panel-content/ticaret/ogiks/ogiks.component';
+import { IdopesComponent } from './menu/panel-content/ticaret/idopes/idopes.component';
 
 
 const allRoutes: Routes = [
@@ -230,6 +233,9 @@ const allRoutes: Routes = [
                 { path: 'girisimcilik', component: GirisimcilikComponent, data: { title: 'Girişimcilik' } },
                 { path: 'vize-hizmetleri', component: VizeComponent, data: { title: 'Vize Hizmetleri' } },
                 { path: 'fuarlar', component: FuarComponent, data: { title: 'Fuarlar' } },
+                { path: 'ihracat-pazar-arastirmasi-raporlari', component: IparComponent, data: { title: 'İhracat Pazar Araştırması Raporları' } },
+                { path: 'odamizda-gerceklestirilen-ihracat-konulu-sunumlar', component: OgiksComponent, data: { title: 'Odamızda Gerçekleştirilen İhracat Konulu Sunumlar' } },
+                { path: 'ihracat-destek-ofisi-projesi-egitim-sunumlari', component: IdopesComponent, data: { title: 'İhracat Destek Ofisi Projesi Eğitim Sunumları' } },
               ]
             },
             {
@@ -403,6 +409,9 @@ const allRoutes: Routes = [
     DexsixComponent,
     DexsevenComponent,
     DexeigComponent,
+    IparComponent,
+    OgiksComponent,
+    IdopesComponent,
   ],
   imports: [
     BrowserModule,

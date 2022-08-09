@@ -27,8 +27,8 @@ export class MenuListComponent implements OnInit {
 
   IContents = ['nİzmir Ticaret Odası İhalelerimiz', 'nİZTO Eğitim ve Sağlık Vakfı İhaleleri', 'nİZQ İhaleleri', 'nİzmir Ekonomi Üniversitesi İhaleleri', 'nİZFAŞ İhaleleri'];
   IDrop = ['dad'];
-  TContents = ['nİhracat Destek Ofisi', 'nGirişimcilik', 'nVize Hizmetleri', 'nFuarlar'];
-  TDrop = ['dsadsadsa'];
+  TContents = ['tİhracat Destek Ofisi', 'nGirişimcilik', 'nVize Hizmetleri', 'nFuarlar'];
+  TDrop = ['tİhracat Pazar Araştırması Raporları', 'tOdamızda Gerçekleştirilen İhracat Konulu Sunumlar', 'tİhracat Destek Ofisi Projesi Eğitim Sunumları'];
 
   BContents = ['yTicaret Sicili Rehberi', 'nOda Sicili Rehberi', 'nTicari İşletme Tanımları', 'qTicari İşlemler Rehberi', 'nKruvaziyer Turizmi', 'nHukuk Sayfası', 'tRaporlar', 'nFire ve Zaiyat Oranları', 'nGayrimenkul Danışmanlığı', 'nYenişehir Ticaret Merkezi', 'nUlusal ve Uluslararası Bağlantılar', 'nİzmir Ticaret Odası İhracatçı Firmalar Listesi', 'nSıkça Sorulan Sorular'];
   BDrop = ['tAB Raporları', 'tFuar Raporları', 'tKentsel Raporlar', 'tSektörel Raporlar', 'tDevlet Teşvikleri Dosyası', 'tÜlke Raporları', 'yKarar Örnekleri', 'yTescilde İstenen Belgeler',

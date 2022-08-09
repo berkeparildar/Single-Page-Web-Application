@@ -1,0 +1,23 @@
+P {
+    margin: 0.5rem;
+}
+
+#aa {
+    border: 2px solid #1d3557;
+}
+
+span {
+    vertical-align: bottom;
+    color: #e63946;
+}
+
+a {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+.th {
+    background-image: url(https://api.izto.org.tr/storage/Setting/banner.png);
+    text-align: center;
+    color: #f1faee;
+}

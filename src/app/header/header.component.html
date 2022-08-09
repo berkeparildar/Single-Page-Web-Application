@@ -1,4 +1,4 @@
-<section class="header">
+<section class="header ">
     <nav class="navbar navbar-expand-lg hbf">
         <a class="navbar-brand" (click)="onSelect('main')" href="#"><img
                 src="https://api.izto.org.tr/storage/HeaderFixed/original/A9YNZTxsGJmINlY9.svg" alt="se"></a>
@@ -14,7 +14,7 @@
                 <a class="nav-link" href="mailto:info@izto.org.tr"><i id="env"
                         class="material-symbols-outlined">mail</i>
                     e-Posta</a>
-                <a class="nav-link" href="#"><i id="env" class="material-symbols-outlined">speed</i>Hızlı
+                <a class="nav-link " href="#"><i id="env" class="material-symbols-outlined">speed</i>Hızlı
                     Erişim</a>
                 <a class="nav-link" href="https://eoda.izto.org.tr/web_ana_sayfa.aspx" target="_blank"><i id="env"
                         class="material-symbols-outlined">language</i> Online
@@ -96,7 +96,8 @@
                             </li>
                             <li><a routerLink="menu/pc/kurumsal/kvkk" class="dropdown-item">KVKK</a></li>
                             <li>
-                                <ul><a routerLink="menu/pc/kurumsal/etkinlik-takvimi" class="dropdown-item list-unstyled">Etkinlik
+                                <ul><a routerLink="menu/pc/kurumsal/etkinlik-takvimi"
+                                        class="dropdown-item list-unstyled">Etkinlik
                                         Takvimi</a>
                                     <li><a routerLink="menu/pc/kurumsal/ozel-gun-ve-haftalar-takvimi"
                                             class="dropdown-item list-unstyled"><span style="font-size: 0.8rem;"
@@ -337,16 +338,32 @@
                     <div class="dropdown-menu m-1 p-1" aria-labelledby="navbarDropdownMenuLink2">
                         <ul class="list-unstyled">
                             <li class="my-1">
-                                <a routerLink="menu/pc/ticaret-noktasi/ihracat-destek-ofisi"
-                                    class="dropdown-item">İhracat Destek
-                                    Ofisi</a>
+                                <ul class="list-unstyled"><a routerLink="menu/pc/kurumsal/organizasyon-yapisi"
+                                        class="dropdown-item">İhracat Destek Ofisi</a>
+                                    <li><a routerLink="/menu/pc/ticaret-noktasi/ihracat-pazar-arastirmasi-raporlari"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>İhracat Pazar Araştırması Raporları</a></li>
+                                    <li><a routerLink="/menu/pc/ticaret-noktasi/odamizda-gerceklestirilen-ihracat-konulu-sunumlar"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Odamızda Gerçekleştirilen İhracat Konulu Sunumlar</a></li>
+                                    <li><a routerLink="/menu/pc/ticaret-noktasi/ihracat-destek-ofisi-projesi-egitim-sunumlari"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>İhracat Destek Ofisi Projesi Eğitim Sunumları </a></li>
+                                </ul>
                             </li>
                             <li class="my-1">
                                 <a routerLink="menu/pc/ticaret-noktasi/girisimcilik"
                                     class="dropdown-item">Girişimcilik</a>
                             </li>
                             <li class="my-1">
-                                <a routerLink="menu/pc/ticaret-noktasi/vize-hizmetleri" class="dropdown-item">Vize Hizmetleri</a>
+                                <a routerLink="menu/pc/ticaret-noktasi/vize-hizmetleri" class="dropdown-item">Vize
+                                    Hizmetleri</a>
                             </li>
                             <li class="my-1">
                                 <a routerLink="menu/pc/ticaret-noktasi/fuarlar" class="dropdown-item">Fuarlar</a>
@@ -399,6 +416,36 @@
                                                 subdirectory_arrow_right
                                             </span>Evrak Kontrol Listesi</a></li>
                                 </ul>
+                                <ul class="list-unstyled"> <a routerLink="menu/pc/bilgi-bankasi/ticaret-sicili-rehberi"
+                                        class="dropdown-item">Raporlar</a>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/ab-raporlari" class="dropdown-item"><span
+                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>AB Raporları</a></li>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/fuar-raporlari" class="dropdown-item"><span
+                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Fuar Raporları</a></li>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/kentsel-raporlar"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Kentsel Raporlar</a></li>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/sektorel-raporlar"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Sektörel Raporlar</a></li>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/devlet-tesvikleri-dosyasi"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Devlet Teşvikleri Dosyası</a></li>
+                                    <li><a routerLink="menu/pc/bilgi-bankasi/ulke-raporlari" class="dropdown-item"><span
+                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                                subdirectory_arrow_right
+                                            </span>Ülke Raporları</a></li>
+                                </ul>
                             </li>
                             <div class="col-4">
                                 <li class="my-1">
@@ -416,7 +463,8 @@
                                         class="dropdown-item">Kruvaziyer Turizmi</a>
                                 </li>
                                 <li class="my-1">
-                                    <a routerLink="menu/pc/bilgi-bankasi/hukuk-sayfasi" class="dropdown-item">Hukuk Sayfası</a>
+                                    <a routerLink="menu/pc/bilgi-bankasi/hukuk-sayfasi" class="dropdown-item">Hukuk
+                                        Sayfası</a>
                                 </li>
                                 <li class="my-1">
                                     <a routerLink="menu/pc/bilgi-bankasi/fire-ve-zaiyat-oranlari"
@@ -443,7 +491,8 @@
                                         class="dropdown-item">İZTO İhracatçı Firmalar Listesi</a>
                                 </li>
                                 <li class="my-1">
-                                    <a routerLink="menu/pc/bilgi-bankasi/sikca-sorulan-sorular" class="dropdown-item">Sıkça Sorulan
+                                    <a routerLink="menu/pc/bilgi-bankasi/sikca-sorulan-sorular"
+                                        class="dropdown-item">Sıkça Sorulan
                                         Sorular</a>
                                 </li>
                             </div>
@@ -538,8 +587,9 @@
                                                 subdirectory_arrow_right
                                             </span>
                                             Arabuluculuk Süreci Akış Şeması</a></li>
-                                    <li><a href="https://www.tobbuyum.com.tr/kolay_basvuru.php" target="_blank" class="dropdown-item"><span
-                                                style="font-size: 0.8rem;" class="material-symbols-outlined">
+                                    <li><a href="https://www.tobbuyum.com.tr/kolay_basvuru.php" target="_blank"
+                                            class="dropdown-item"><span style="font-size: 0.8rem;"
+                                                class="material-symbols-outlined">
                                                 subdirectory_arrow_right
                                             </span>
                                             Kolay Başvuru</a></li>
