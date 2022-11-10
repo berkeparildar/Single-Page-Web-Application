@@ -6,8 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./panel-content.component.css']
 })
 export class PanelContentComponent implements OnInit {
-  @Input('pageDisplayString') title: string = '';
-  @Input() section : string = '';
+
   constructor() { }
 
   ngOnInit(): void { }

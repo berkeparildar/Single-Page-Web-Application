@@ -58,8 +58,8 @@ export class MenuListComponent implements OnInit {
     let asa: string = evaL;
     let aaa: string = evaL;
     let ddd: string = evaL;
-    if ((evaL.includes('ğ')) || (evaL.includes('ö')) || (evaL.includes('ı')) || (evaL.includes('ş')) || (evaL.includes('ç')) || (evaL.includes('ü')) || (evaL.includes('ö')) ||
-      (evaL.includes('Ü'))) {
+    if ((evaL.includes('ğ')) || (evaL.includes('ö')) || (evaL.includes('ı')) || (evaL.includes('ş')) || 
+    (evaL.includes('ç')) || (evaL.includes('ü')) || (evaL.includes('ö')) || (evaL.includes('Ü'))) {
       asd = evaL.replaceAll('ğ', 'g');
       dsa = asd.replaceAll('ö', 'o');
       sad = dsa.replaceAll('ı', 'i');
