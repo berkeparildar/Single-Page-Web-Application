@@ -13,44 +13,43 @@ import { MenuListComponent } from './menu/menu-list/menu-list.component';
 import { PanelContentComponent } from './menu/panel-content/panel-content.component';
 import { ButtonPanelComponent } from './main/button-panel/button-panel.component';
 import { ImgPanelComponent } from './main/img-panel/img-panel.component';
-import { SecondButtonPanelComponent } from './main/second-button-panel/second-button-panel.component';
 import { ContactComponent } from './contact/contact.component';
 import { KurumsalComponent } from './menu/panel-content/kurumsal/kurumsal.component';
 import { EodaComponent } from './menu/panel-content/e_oda/eoda.component';
 import { UyeComponent } from './menu/panel-content/uye/uye.component';
 import { DveComponent } from './menu/panel-content/duyuru_etkinlikler/dve.component';
-import { TicaretComponent } from './menu/panel-content/ticaret/ticaret.component';
+import { TicaretComponent } from './menu/panel-content/ticaret-noktasi/ticaret.component';
 import { BankComponent } from './menu/panel-content/bilgibankasi/bank.component';
 import { IztotamComponent } from './menu/panel-content/iztotam/iztotam.component';
 import { dataTransfer } from './dataTransfer.service';
 import { RouterModule, Routes } from '@angular/router';
-import { VizyonComponent } from './menu/panel-content/kurumsal/vizyon/vizyon.component';
-import { TdypComponent } from './menu/panel-content/kurumsal/tdyp/tdyp.component';
-import { OrganizasyonComponent } from './menu/panel-content/kurumsal/organizasyon/organizasyon.component';
-import { YonetimComponent } from './menu/panel-content/kurumsal/yonetim/yonetim.component';
+import { VizyonComponent } from './menu/panel-content/kurumsal/vizyon_misyon/vizyon.component';
+import { TdypComponent } from './menu/panel-content/kurumsal/temel_degerler/tdyp.component';
+import { OrganizasyonComponent } from './menu/panel-content/kurumsal/organizasyon_yapisi/organizasyon.component';
+import { YonetimComponent } from './menu/panel-content/kurumsal/yonetim_kurulu/yonetim.component';
 import { MeclisComponent } from './menu/panel-content/kurumsal/meclis/meclis.component';
-import { DisiplinComponent } from './menu/panel-content/kurumsal/disiplin/disiplin.component';
-import { OschemeComponent } from './menu/panel-content/kurumsal/oscheme/oscheme.component';
-import { LogoComponent } from './menu/panel-content/kurumsal/logo/logo.component';
-import { OdahesapComponent } from './menu/panel-content/kurumsal/odahesap/odahesap.component';
-import { SpcpComponent } from './menu/panel-content/kurumsal/spcp/spcp.component';
-import { KardesComponent } from './menu/panel-content/kurumsal/kardes/kardes.component';
+import { DisiplinComponent } from './menu/panel-content/kurumsal/disiplin_kurulu/disiplin.component';
+import { OschemeComponent } from './menu/panel-content/kurumsal/organizasyon_semasi/oscheme.component';
+import { LogoComponent } from './menu/panel-content/kurumsal/logo_kurumsal_kimlik/logo.component';
+import { OdahesapComponent } from './menu/panel-content/kurumsal/oda_hesaplari/odahesap.component';
+import { SpcpComponent } from './menu/panel-content/kurumsal/stratejik_planlar/spcp.component';
+import { KardesComponent } from './menu/panel-content/kurumsal/kardes_odalar/kardes.component';
 import { KvkkComponent } from './menu/panel-content/kurumsal/kvkk/kvkk.component';
-import { EtakvimComponent } from './menu/panel-content/kurumsal/etakvim/etakvim.component';
-import { OgtComponent } from './menu/panel-content/kurumsal/ogt/ogt.component';
-import { KttComponent } from './menu/panel-content/kurumsal/ktt/ktt.component';
-import { HrehberComponent } from './menu/panel-content/kurumsal/hrehber/hrehber.component';
+import { EtakvimComponent } from './menu/panel-content/kurumsal/etkinlik_takvimi/etakvim.component';
+import { OgtComponent } from './menu/panel-content/kurumsal/ozel_gun_haftalar/ogt.component';
+import { KttComponent } from './menu/panel-content/kurumsal/komite_toplanti_takvimi/ktt.component';
+import { HrehberComponent } from './menu/panel-content/kurumsal/hizmet_rehberi/hrehber.component';
 import { MkcComponent } from './menu/panel-content/e_oda/meslek_komitesi_calismalari/mkc.component';
 import { EformlarComponent } from './menu/panel-content/e_oda/e_formlar/eformlar.component';
 import { UbgfComponent } from './menu/panel-content/e_oda/uye_bilgi_guncelleme_formu/ubgf.component';
 import { UmaComponent } from './menu/panel-content/e_oda/uye_memnuniyeti_anketi/uma.component';
 import { CmaComponent } from './menu/panel-content/e_oda/cagri_merkezi_anketi/cma.component';
 import { MkiComponent } from './menu/panel-content/e_oda/meslek_komitesi_iletisim/mki.component';
-import { AstnComponent } from './menu/panel-content/iztotam/astn/astn.component';
-import { AcyComponent } from './menu/panel-content/iztotam/acy/acy.component';
-import { AkComponent } from './menu/panel-content/iztotam/ak/ak.component';
-import { AlComponent } from './menu/panel-content/iztotam/al/al.component';
-import { AsasComponent } from './menu/panel-content/iztotam/asas/asas.component';
+import { AstnComponent } from './menu/panel-content/iztotam/arabulucu_temel_nitelik/astn.component';
+import { AcyComponent } from './menu/panel-content/iztotam/arabulucu_cozum_yollari/acy.component';
+import { AkComponent } from './menu/panel-content/iztotam/arabuluculuk_kurallari/ak.component';
+import { AlComponent } from './menu/panel-content/iztotam/arabulucu_listesi/al.component';
+import { AsasComponent } from './menu/panel-content/iztotam/arabulucu_sureci/asas.component';
 import { UyelikislemlerComponent } from './menu/panel-content/uye/uyelik_islemleri/uyelikislemler.component';
 import { OubgComponent } from './menu/panel-content/uye/online_uye_bilgi_guncelleme/oubg.component';
 import { EfkComponent } from './menu/panel-content/uye/ek_faaliyet_kodu/efk.component';
@@ -70,20 +69,20 @@ import { FdComponent } from './menu/panel-content/duyuru_etkinlikler/fuar/fd.com
 import { DdComponent } from './menu/panel-content/duyuru_etkinlikler/dis_ticaret/dd.component';
 import { TdComponent } from './menu/panel-content/duyuru_etkinlikler/ticaret_sicil/td.component';
 import { EduComponent } from './menu/panel-content/duyuru_etkinlikler/egitimler/edu.component';
-import { IdoComponent } from './menu/panel-content/ticaret/ido/ido.component';
-import { GirisimcilikComponent } from './menu/panel-content/ticaret/girisimcilik/girisimcilik.component';
-import { VizeComponent } from './menu/panel-content/ticaret/vize/vize.component';
-import { FuarComponent } from './menu/panel-content/ticaret/fuar/fuar.component';
+import { IdoComponent } from './menu/panel-content/ticaret-noktasi/ido/ido.component';
+import { GirisimcilikComponent } from './menu/panel-content/ticaret-noktasi/girisimcilik/girisimcilik.component';
+import { VizeComponent } from './menu/panel-content/ticaret-noktasi/vize/vize.component';
+import { FuarComponent } from './menu/panel-content/ticaret-noktasi/fuar/fuar.component';
 import { FzoComponent } from './menu/panel-content/bilgibankasi/fire_zaiyat_oranlari/fzo.component';
 import { IflComponent } from './menu/panel-content/bilgibankasi/izto_ihracatci_firmalar/ifl.component';
 import { TitComponent } from './menu/panel-content/bilgibankasi/ticari_isletme_tanimları/tit.component';
 import { UvubComponent } from './menu/panel-content/bilgibankasi/ulusal_uluslararasi_baglantilar/uvub.component';
 import { IhalelerComponent } from './menu/panel-content/ihaleler/ihaleler.component';
-import { IztoiComponent } from './menu/panel-content/ihaleler/iztoi/iztoi.component';
-import { IztoesComponent } from './menu/panel-content/ihaleler/iztoes/iztoes.component';
-import { IzqiComponent } from './menu/panel-content/ihaleler/izqi/izqi.component';
-import { IeuiComponent } from './menu/panel-content/ihaleler/ieui/ieui.component';
-import { IiComponent } from './menu/panel-content/ihaleler/ii/ii.component';
+import { IztoiComponent } from './menu/panel-content/ihaleler/izto_ihale/iztoi.component';
+import { IztoesComponent } from './menu/panel-content/ihaleler/izto_egitim_saglik/iztoes.component';
+import { IzqiComponent } from './menu/panel-content/ihaleler/izq_ihaleleri/izqi.component';
+import { IeuiComponent } from './menu/panel-content/ihaleler/ieu_ihale/ieui.component';
+import { IiComponent } from './menu/panel-content/ihaleler/izfas_ihale/ii.component';
 import { CovidComponent } from './menu/panel-content/bilgibankasi/covid/covid.component';
 import { RaporlarComponent } from './menu/panel-content/bilgibankasi/raporlar/raporlar.component';
 import { AbComponent } from './menu/panel-content/bilgibankasi/ab_raporlari/ab.component';
@@ -143,7 +142,7 @@ const allRoutes: Routes = [
               path: 'kurumsal', component: KurumsalComponent, data: { header: 'Kurumsal', index: 0 }, children:
                 [
                   { path: 'vizyonumuz-ve-misyonumuz', component: VizyonComponent, data: { title: 'Vizyonumuz ve Misyonumuz' } },
-                  { path: 'temel-degerlerimiz-ve-yonetim-politikamiz', component: TdypComponent, data: { title: 'Temel Değerlerimiz ve Yönetim Politikamız' } },
+                  { path: 'temel-degerlerimiz-ve-yonetim_kurulu-politikamiz', component: TdypComponent, data: { title: 'Temel Değerlerimiz ve Yönetim Politikamız' } },
                   { path: 'organizasyon-yapisi', component: OrganizasyonComponent, data: { title: 'Organizasyon Yapısı' } },
                   { path: 'yonetim-kurulu', component: YonetimComponent, data: { title: 'Yönetim Kurulu' } },
                   { path: 'meclis', component: MeclisComponent, data: { title: 'Meclis' } },
@@ -170,7 +169,7 @@ const allRoutes: Routes = [
                   { path: 'cagri-merkezi-memnuniyeti-anketi', component: CmaComponent, data: { title: 'Çağrı Merkezi Memnuniyeti Anketi' } },
                   { path: 'meslek-komiteleri-iletisim-formu', component: MkiComponent, data: { title: 'Meslek Komiteleri Iletişim Formu' } },
                   { path: 'ticari-kazanc-beyan-formu', component: TkbfComponent, data: { title: 'Ticari Kazanç Beyan Formu' } },
-                  { path: 'izmir-ticaret-odasi-sikayet-ve-oneri-sureci', component: SikaoneComponent, data: { title: 'İzmir Ticaret Odası Şikayet ve Öneri Süreci' } },
+                  { path: 'izmir-ticaret-noktasi-odasi-sikayet-ve-oneri-sureci', component: SikaoneComponent, data: { title: 'İzmir Ticaret Odası Şikayet ve Öneri Süreci' } },
                   { path: 'bilgi-edinme-birimi', component: BebComponent, data: { title: 'Bilgi Edinme Birimi' } },
                   { path: 'gercek-kisiler-icin-bilgi-edinme-formu', component: GkibefComponent, data: { title: 'Gerçek Kişiler İçin Bilgi Edinme Formu' } },
                   { path: 'tuzel-kisiler-icin-bilgi-edinme-formu', component: TkibefComponent, data: { title: 'Tüzel Kişiler İçin Bilgi Edinme Formu' } },
@@ -237,9 +236,9 @@ const allRoutes: Routes = [
                 { path: 'ulusal-ve-uluslararasi-baglantilar', component: UvubComponent, data: { title: 'Ulusal ve Uluslararası Bağlantılar' } },
                 { path: 'covid', component: CovidComponent, data: { title: '' } },
                 { path: 'raporlar', component: RaporlarComponent, data: { title: 'Raporlar' } },
-                { path: 'ab_raporlari-raporlari', component: AbComponent, data: { title: 'AB Raporları' } },
+                { path: 'ab-raporlari', component: AbComponent, data: { title: 'AB Raporları' } },
                 { path: 'kentsel-raporlar', component: KentselrComponent, data: { title: 'Kentsel Raporlar' } },
-                { path: 'sektorel_raporlar-raporlar', component: SektorelComponent, data: { title: 'Sektörel Raporlar' } },
+                { path: 'sektorel-raporlar', component: SektorelComponent, data: { title: 'Sektörel Raporlar' } },
                 { path: 'ulke-raporlari', component: UlrComponent, data: { title: 'Ülke Raporları' } },
                 { path: 'devlet-tesvikleri-dosyasi', component: DtdsComponent, data: { title: 'Devlet Teşvikleri Dosyası' } },
                 { path: 'fuar-raporlari', component: FuarraportlariComponent, data: { title: 'Fuar Raporları' } },
@@ -254,7 +253,7 @@ const allRoutes: Routes = [
                 { path: 'genel-bilgiler', component: GenelbilComponent, data: { title: 'Genel Bilgiler' } },
                 { path: 'evrak-kontrol-listesi', component: EvraklistComponent, data: { title: 'Evrak Kontrol Listesi' } },
                 { path: 'ticaret-sicili-rehberi', component: TsrehberComponent, data: { title: 'Ticaret Sicili Rehberi' } },
-                { path: 'antrepo_belgesi-belgesi', component: AntrepoComponent, data: { title: 'Antrepo Belgesi' } },
+                { path: 'antrepo-belgesi', component: AntrepoComponent, data: { title: 'Antrepo Belgesi' } },
                 { path: 'ata-karnesi', component: AtakarnesiComponent, data: { title: 'Ata Karnesi' } },
                 { path: 'azami-fiyat-tarifesi', component: AftarifeComponent, data: { title: 'Azami Fiyat Tarifesi' } },
                 { path: 'bilirkisi', component: BilirkisiComponent, data: { title: 'Bilirkişi' } },
@@ -266,7 +265,7 @@ const allRoutes: Routes = [
                 { path: 'turk-mali-belgesi', component: TmalibelgesiComponent, data: { title: 'Türk Malı Belgesi' } },
                 { path: 'tobb-sigorta-levhaya-kayit', component: TobbslkComponent, data: { title: 'TOBB Sigorta Levhaya Kayıt' } },
                 { path: 'ticari-islemler-rehberi', component: TiisrehComponent, data: { title: 'Ticari İşlemler Rehberi' } },
-                { path: 'hukuk_sayfasi-sayfasi', component: HukukComponent, data: { title: 'Hukuk Sayfası' } },
+                { path: 'hukuk-sayfasi', component: HukukComponent, data: { title: 'Hukuk Sayfası' } },
                 { path: 'sikca-sorulan-sorular', component: SssComponent, data: { title: 'Sıkça Sorulan Sorular' } },
               ]
             },
@@ -301,7 +300,6 @@ const allRoutes: Routes = [
     PanelContentComponent,
     ButtonPanelComponent,
     ImgPanelComponent,
-    SecondButtonPanelComponent,
     ContactComponent,
     KurumsalComponent,
     EodaComponent,
